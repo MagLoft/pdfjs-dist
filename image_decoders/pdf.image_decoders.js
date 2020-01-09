@@ -2,7 +2,7 @@
  * @licstart The following is the entire license notice for the
  * Javascript code in this page
  *
- * Copyright 2019 Mozilla Foundation
+ * Copyright 2020 Mozilla Foundation
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -159,14 +159,14 @@ Object.defineProperty(exports, "JpxImage", {
 
 var _util = __w_pdfjs_require__(1);
 
-var _jbig = __w_pdfjs_require__(158);
+var _jbig = __w_pdfjs_require__(162);
 
-var _jpg = __w_pdfjs_require__(161);
+var _jpg = __w_pdfjs_require__(165);
 
-var _jpx = __w_pdfjs_require__(162);
+var _jpx = __w_pdfjs_require__(166);
 
-var pdfjsVersion = '2.3.200';
-var pdfjsBuild = '4ae3f9fc';
+var pdfjsVersion = '2.4.266';
+var pdfjsBuild = 'c3ce3e0b';
 
 /***/ }),
 /* 1 */
@@ -210,17 +210,9 @@ exports.stringToUTF8String = stringToUTF8String;
 exports.utf8StringToString = utf8StringToString;
 exports.warn = warn;
 exports.unreachable = unreachable;
-Object.defineProperty(exports, "ReadableStream", {
-  enumerable: true,
-  get: function () {
-    return _streams_polyfill.ReadableStream;
-  }
-});
 exports.createObjectURL = exports.FormatError = exports.Util = exports.UnknownErrorException = exports.UnexpectedResponseException = exports.TextRenderingMode = exports.StreamType = exports.PermissionFlag = exports.PasswordResponses = exports.PasswordException = exports.NativeImageDecoding = exports.MissingPDFException = exports.InvalidPDFException = exports.AbortException = exports.CMapCompressionType = exports.ImageKind = exports.FontType = exports.AnnotationType = exports.AnnotationStateModelType = exports.AnnotationReviewState = exports.AnnotationReplyType = exports.AnnotationMarkedState = exports.AnnotationFlag = exports.AnnotationFieldFlag = exports.AnnotationBorderStyleType = exports.UNSUPPORTED_FEATURES = exports.VerbosityLevel = exports.OPS = exports.IDENTITY_MATRIX = exports.FONT_IDENTITY_MATRIX = exports.BaseException = void 0;
 
 __w_pdfjs_require__(2);
-
-var _streams_polyfill = __w_pdfjs_require__(157);
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
@@ -245,9 +237,9 @@ exports.IDENTITY_MATRIX = IDENTITY_MATRIX;
 var FONT_IDENTITY_MATRIX = [0.001, 0, 0, 0.001, 0, 0];
 exports.FONT_IDENTITY_MATRIX = FONT_IDENTITY_MATRIX;
 var NativeImageDecoding = {
-  NONE: 'none',
-  DECODE: 'decode',
-  DISPLAY: 'display'
+  NONE: "none",
+  DECODE: "decode",
+  DISPLAY: "display"
 };
 exports.NativeImageDecoding = NativeImageDecoding;
 var PermissionFlag = {
@@ -310,26 +302,26 @@ var AnnotationType = {
 };
 exports.AnnotationType = AnnotationType;
 var AnnotationStateModelType = {
-  MARKED: 'Marked',
-  REVIEW: 'Review'
+  MARKED: "Marked",
+  REVIEW: "Review"
 };
 exports.AnnotationStateModelType = AnnotationStateModelType;
 var AnnotationMarkedState = {
-  MARKED: 'Marked',
-  UNMARKED: 'Unmarked'
+  MARKED: "Marked",
+  UNMARKED: "Unmarked"
 };
 exports.AnnotationMarkedState = AnnotationMarkedState;
 var AnnotationReviewState = {
-  ACCEPTED: 'Accepted',
-  REJECTED: 'Rejected',
-  CANCELLED: 'Cancelled',
-  COMPLETED: 'Completed',
-  NONE: 'None'
+  ACCEPTED: "Accepted",
+  REJECTED: "Rejected",
+  CANCELLED: "Cancelled",
+  COMPLETED: "Completed",
+  NONE: "None"
 };
 exports.AnnotationReviewState = AnnotationReviewState;
 var AnnotationReplyType = {
-  GROUP: 'Group',
-  REPLY: 'R'
+  GROUP: "Group",
+  REPLY: "R"
 };
 exports.AnnotationReplyType = AnnotationReplyType;
 var AnnotationFlag = {
@@ -376,30 +368,30 @@ var AnnotationBorderStyleType = {
 };
 exports.AnnotationBorderStyleType = AnnotationBorderStyleType;
 var StreamType = {
-  UNKNOWN: 'UNKNOWN',
-  FLATE: 'FLATE',
-  LZW: 'LZW',
-  DCT: 'DCT',
-  JPX: 'JPX',
-  JBIG: 'JBIG',
-  A85: 'A85',
-  AHX: 'AHX',
-  CCF: 'CCF',
-  RLX: 'RLX'
+  UNKNOWN: "UNKNOWN",
+  FLATE: "FLATE",
+  LZW: "LZW",
+  DCT: "DCT",
+  JPX: "JPX",
+  JBIG: "JBIG",
+  A85: "A85",
+  AHX: "AHX",
+  CCF: "CCF",
+  RLX: "RLX"
 };
 exports.StreamType = StreamType;
 var FontType = {
-  UNKNOWN: 'UNKNOWN',
-  TYPE1: 'TYPE1',
-  TYPE1C: 'TYPE1C',
-  CIDFONTTYPE0: 'CIDFONTTYPE0',
-  CIDFONTTYPE0C: 'CIDFONTTYPE0C',
-  TRUETYPE: 'TRUETYPE',
-  CIDFONTTYPE2: 'CIDFONTTYPE2',
-  TYPE3: 'TYPE3',
-  OPENTYPE: 'OPENTYPE',
-  TYPE0: 'TYPE0',
-  MMTYPE1: 'MMTYPE1'
+  UNKNOWN: "UNKNOWN",
+  TYPE1: "TYPE1",
+  TYPE1C: "TYPE1C",
+  CIDFONTTYPE0: "CIDFONTTYPE0",
+  CIDFONTTYPE0C: "CIDFONTTYPE0C",
+  TRUETYPE: "TRUETYPE",
+  CIDFONTTYPE2: "CIDFONTTYPE2",
+  TYPE3: "TYPE3",
+  OPENTYPE: "OPENTYPE",
+  TYPE0: "TYPE0",
+  MMTYPE1: "MMTYPE1"
 };
 exports.FontType = FontType;
 var VerbosityLevel = {
@@ -509,12 +501,12 @@ var OPS = {
 };
 exports.OPS = OPS;
 var UNSUPPORTED_FEATURES = {
-  unknown: 'unknown',
-  forms: 'forms',
-  javaScript: 'javaScript',
-  smask: 'smask',
-  shadingPattern: 'shadingPattern',
-  font: 'font'
+  unknown: "unknown",
+  forms: "forms",
+  javaScript: "javaScript",
+  smask: "smask",
+  shadingPattern: "shadingPattern",
+  font: "font"
 };
 exports.UNSUPPORTED_FEATURES = UNSUPPORTED_FEATURES;
 var PasswordResponses = {
@@ -562,7 +554,7 @@ function isSameOrigin(baseUrl, otherUrl) {
   try {
     base = new URL(baseUrl);
 
-    if (!base.origin || base.origin === 'null') {
+    if (!base.origin || base.origin === "null") {
       return false;
     }
   } catch (e) {
@@ -579,11 +571,11 @@ function _isValidProtocol(url) {
   }
 
   switch (url.protocol) {
-    case 'http:':
-    case 'https:':
-    case 'ftp:':
-    case 'mailto:':
-    case 'tel:':
+    case "http:":
+    case "https:":
+    case "ftp:":
+    case "mailto:":
+    case "tel:":
       return true;
 
     default:
@@ -620,7 +612,7 @@ function shadow(obj, prop, value) {
 var BaseException = function BaseExceptionClosure() {
   function BaseException(message) {
     if (this.constructor === BaseException) {
-      unreachable('Cannot initialize BaseException.');
+      unreachable("Cannot initialize BaseException.");
     }
 
     this.message = message;
@@ -760,16 +752,16 @@ exports.AbortException = AbortException;
 var NullCharactersRegExp = /\x00/g;
 
 function removeNullCharacters(str) {
-  if (typeof str !== 'string') {
-    warn('The argument for removeNullCharacters must be a string.');
+  if (typeof str !== "string") {
+    warn("The argument for removeNullCharacters must be a string.");
     return str;
   }
 
-  return str.replace(NullCharactersRegExp, '');
+  return str.replace(NullCharactersRegExp, "");
 }
 
 function bytesToString(bytes) {
-  assert(bytes !== null && _typeof(bytes) === 'object' && bytes.length !== undefined, 'Invalid argument for bytesToString');
+  assert(bytes !== null && _typeof(bytes) === "object" && bytes.length !== undefined, "Invalid argument for bytesToString");
   var length = bytes.length;
   var MAX_ARGUMENT_COUNT = 8192;
 
@@ -785,16 +777,16 @@ function bytesToString(bytes) {
     strBuf.push(String.fromCharCode.apply(null, chunk));
   }
 
-  return strBuf.join('');
+  return strBuf.join("");
 }
 
 function stringToBytes(str) {
-  assert(typeof str === 'string', 'Invalid argument for stringToBytes');
+  assert(typeof str === "string", "Invalid argument for stringToBytes");
   var length = str.length;
   var bytes = new Uint8Array(length);
 
   for (var i = 0; i < length; ++i) {
-    bytes[i] = str.charCodeAt(i) & 0xFF;
+    bytes[i] = str.charCodeAt(i) & 0xff;
   }
 
   return bytes;
@@ -829,7 +821,7 @@ function arraysToBytes(arr) {
     var item = arr[_i];
 
     if (!(item instanceof Uint8Array)) {
-      if (typeof item === 'string') {
+      if (typeof item === "string") {
         item = stringToBytes(item);
       } else {
         item = new Uint8Array(item);
@@ -877,14 +869,14 @@ function isLittleEndian() {
 
 function isEvalSupported() {
   try {
-    new Function('');
+    new Function("");
     return true;
   } catch (e) {
     return false;
   }
 }
 
-var rgbBuf = ['rgb(', 0, ',', 0, ',', 0, ')'];
+var rgbBuf = ["rgb(", 0, ",", 0, ",", 0, ")"];
 
 var Util =
 /*#__PURE__*/
@@ -899,7 +891,7 @@ function () {
       rgbBuf[1] = r;
       rgbBuf[3] = g;
       rgbBuf[5] = b;
-      return rgbBuf.join('');
+      return rgbBuf.join("");
     }
   }, {
     key: "transform",
@@ -1013,18 +1005,22 @@ function stringToPDFString(str) {
   var length = str.length,
       strBuf = [];
 
-  if (str[0] === '\xFE' && str[1] === '\xFF') {
+  if (str[0] === "\xFE" && str[1] === "\xFF") {
     for (var i = 2; i < length; i += 2) {
       strBuf.push(String.fromCharCode(str.charCodeAt(i) << 8 | str.charCodeAt(i + 1)));
     }
+  } else if (str[0] === "\xFF" && str[1] === "\xFE") {
+    for (var _i2 = 2; _i2 < length; _i2 += 2) {
+      strBuf.push(String.fromCharCode(str.charCodeAt(_i2 + 1) << 8 | str.charCodeAt(_i2)));
+    }
   } else {
-    for (var _i2 = 0; _i2 < length; ++_i2) {
-      var code = PDFStringTranslateTable[str.charCodeAt(_i2)];
-      strBuf.push(code ? String.fromCharCode(code) : str.charAt(_i2));
+    for (var _i3 = 0; _i3 < length; ++_i3) {
+      var code = PDFStringTranslateTable[str.charCodeAt(_i3)];
+      strBuf.push(code ? String.fromCharCode(code) : str.charAt(_i3));
     }
   }
 
-  return strBuf.join('');
+  return strBuf.join("");
 }
 
 function stringToUTF8String(str) {
@@ -1044,19 +1040,19 @@ function isEmptyObj(obj) {
 }
 
 function isBool(v) {
-  return typeof v === 'boolean';
+  return typeof v === "boolean";
 }
 
 function isNum(v) {
-  return typeof v === 'number';
+  return typeof v === "number";
 }
 
 function isString(v) {
-  return typeof v === 'string';
+  return typeof v === "string";
 }
 
 function isArrayBuffer(v) {
-  return _typeof(v) === 'object' && v !== null && v.byteLength !== undefined;
+  return _typeof(v) === "object" && v !== null && v.byteLength !== undefined;
 }
 
 function isArrayEqual(arr1, arr2) {
@@ -1070,13 +1066,13 @@ function isArrayEqual(arr1, arr2) {
 }
 
 function isSpace(ch) {
-  return ch === 0x20 || ch === 0x09 || ch === 0x0D || ch === 0x0A;
+  return ch === 0x20 || ch === 0x09 || ch === 0x0d || ch === 0x0a;
 }
 
 function createPromiseCapability() {
   var capability = Object.create(null);
   var isSettled = false;
-  Object.defineProperty(capability, 'settled', {
+  Object.defineProperty(capability, "settled", {
     get: function get() {
       return isSettled;
     }
@@ -1096,7 +1092,7 @@ function createPromiseCapability() {
 }
 
 var createObjectURL = function createObjectURLClosure() {
-  var digits = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+  var digits = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
   return function createObjectURL(data, contentType) {
     var forceDataSchema = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
@@ -1110,13 +1106,13 @@ var createObjectURL = function createObjectURLClosure() {
     var buffer = "data:".concat(contentType, ";base64,");
 
     for (var i = 0, ii = data.length; i < ii; i += 3) {
-      var b1 = data[i] & 0xFF;
-      var b2 = data[i + 1] & 0xFF;
-      var b3 = data[i + 2] & 0xFF;
+      var b1 = data[i] & 0xff;
+      var b2 = data[i + 1] & 0xff;
+      var b3 = data[i + 2] & 0xff;
       var d1 = b1 >> 2,
           d2 = (b1 & 3) << 4 | b2 >> 4;
-      var d3 = i + 1 < ii ? (b2 & 0xF) << 2 | b3 >> 6 : 64;
-      var d4 = i + 2 < ii ? b3 & 0x3F : 64;
+      var d3 = i + 1 < ii ? (b2 & 0xf) << 2 | b3 >> 6 : 64;
+      var d4 = i + 2 < ii ? b3 & 0x3f : 64;
       buffer += digits[d1] + digits[d2] + digits[d3] + digits[d4];
     }
 
@@ -1135,32 +1131,37 @@ exports.createObjectURL = createObjectURL;
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-var globalScope = __w_pdfjs_require__(3);
+if (typeof globalThis === "undefined" || !globalThis._pdfjsCompatibilityChecked) {
+  if (typeof globalThis === "undefined" || globalThis.Math !== Math) {
+    globalThis = __w_pdfjs_require__(3);
+  }
 
-if (!globalScope._pdfjsCompatibilityChecked) {
-  globalScope._pdfjsCompatibilityChecked = true;
+  globalThis._pdfjsCompatibilityChecked = true;
 
-  var isNodeJS = __w_pdfjs_require__(4);
+  var _require = __w_pdfjs_require__(48),
+      isNodeJS = _require.isNodeJS;
 
-  var hasDOM = (typeof window === "undefined" ? "undefined" : _typeof(window)) === 'object' && (typeof document === "undefined" ? "undefined" : _typeof(document)) === 'object';
+  var hasDOM = (typeof window === "undefined" ? "undefined" : _typeof(window)) === "object" && (typeof document === "undefined" ? "undefined" : _typeof(document)) === "object";
+  var userAgent = typeof navigator !== "undefined" && navigator.userAgent || "";
+  var isIE = /Trident/.test(userAgent);
 
   (function checkNodeBtoa() {
-    if (globalScope.btoa || !isNodeJS()) {
+    if (globalThis.btoa || !isNodeJS) {
       return;
     }
 
-    globalScope.btoa = function (chars) {
-      return Buffer.from(chars, 'binary').toString('base64');
+    globalThis.btoa = function (chars) {
+      return Buffer.from(chars, "binary").toString("base64");
     };
   })();
 
   (function checkNodeAtob() {
-    if (globalScope.atob || !isNodeJS()) {
+    if (globalThis.atob || !isNodeJS) {
       return;
     }
 
-    globalScope.atob = function (input) {
-      return Buffer.from(input, 'base64').toString('binary');
+    globalThis.atob = function (input) {
+      return Buffer.from(input, "base64").toString("binary");
     };
   })();
 
@@ -1169,7 +1170,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    if (typeof Element.prototype.remove !== 'undefined') {
+    if (typeof Element.prototype.remove !== "undefined") {
       return;
     }
 
@@ -1181,14 +1182,14 @@ if (!globalScope._pdfjsCompatibilityChecked) {
   })();
 
   (function checkDOMTokenListAddRemove() {
-    if (!hasDOM || isNodeJS()) {
+    if (!hasDOM || isNodeJS) {
       return;
     }
 
-    var div = document.createElement('div');
-    div.classList.add('testOne', 'testTwo');
+    var div = document.createElement("div");
+    div.classList.add("testOne", "testTwo");
 
-    if (div.classList.contains('testOne') === true && div.classList.contains('testTwo') === true) {
+    if (div.classList.contains("testOne") === true && div.classList.contains("testTwo") === true) {
       return;
     }
 
@@ -1219,19 +1220,38 @@ if (!globalScope._pdfjsCompatibilityChecked) {
   })();
 
   (function checkDOMTokenListToggle() {
-    if (!hasDOM || isNodeJS()) {
+    if (!hasDOM || isNodeJS) {
       return;
     }
 
-    var div = document.createElement('div');
+    var div = document.createElement("div");
 
-    if (div.classList.toggle('test', 0) === false) {
+    if (div.classList.toggle("test", 0) === false) {
       return;
     }
 
     DOMTokenList.prototype.toggle = function (token) {
       var force = arguments.length > 1 ? !!arguments[1] : !this.contains(token);
-      return this[force ? 'add' : 'remove'](token), force;
+      return this[force ? "add" : "remove"](token), force;
+    };
+  })();
+
+  (function checkWindowHistoryPushStateReplaceState() {
+    if (!hasDOM || !isIE) {
+      return;
+    }
+
+    var OriginalPushState = window.history.pushState;
+    var OriginalReplaceState = window.history.replaceState;
+
+    window.history.pushState = function (state, title, url) {
+      var args = url === undefined ? [state, title] : [state, title, url];
+      OriginalPushState.apply(this, args);
+    };
+
+    window.history.replaceState = function (state, title, url) {
+      var args = url === undefined ? [state, title] : [state, title, url];
+      OriginalReplaceState.apply(this, args);
     };
   })();
 
@@ -1240,7 +1260,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(5);
+    __w_pdfjs_require__(49);
   })();
 
   (function checkStringEndsWith() {
@@ -1248,7 +1268,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(57);
+    __w_pdfjs_require__(60);
   })();
 
   (function checkStringIncludes() {
@@ -1256,7 +1276,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(59);
+    __w_pdfjs_require__(62);
   })();
 
   (function checkArrayIncludes() {
@@ -1264,7 +1284,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(61);
+    __w_pdfjs_require__(64);
   })();
 
   (function checkArrayFrom() {
@@ -1272,7 +1292,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(68);
+    __w_pdfjs_require__(71);
   })();
 
   (function checkObjectAssign() {
@@ -1280,7 +1300,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(89);
+    __w_pdfjs_require__(93);
   })();
 
   (function checkMathLog2() {
@@ -1288,7 +1308,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    Math.log2 = __w_pdfjs_require__(92);
+    Math.log2 = __w_pdfjs_require__(96);
   })();
 
   (function checkNumberIsNaN() {
@@ -1296,7 +1316,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    Number.isNaN = __w_pdfjs_require__(94);
+    Number.isNaN = __w_pdfjs_require__(98);
   })();
 
   (function checkNumberIsInteger() {
@@ -1304,27 +1324,29 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    Number.isInteger = __w_pdfjs_require__(96);
+    Number.isInteger = __w_pdfjs_require__(100);
   })();
 
   (function checkPromise() {})();
 
   (function checkURL() {})();
 
+  (function checkReadableStream() {})();
+
   (function checkWeakMap() {
-    if (globalScope.WeakMap) {
+    if (globalThis.WeakMap) {
       return;
     }
 
-    globalScope.WeakMap = __w_pdfjs_require__(99);
+    globalThis.WeakMap = __w_pdfjs_require__(103);
   })();
 
   (function checkWeakSet() {
-    if (globalScope.WeakSet) {
+    if (globalThis.WeakSet) {
       return;
     }
 
-    globalScope.WeakSet = __w_pdfjs_require__(117);
+    globalThis.WeakSet = __w_pdfjs_require__(121);
   })();
 
   (function checkStringCodePointAt() {
@@ -1332,7 +1354,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(119);
+    __w_pdfjs_require__(123);
   })();
 
   (function checkStringFromCodePoint() {
@@ -1340,15 +1362,15 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    String.fromCodePoint = __w_pdfjs_require__(121);
+    String.fromCodePoint = __w_pdfjs_require__(125);
   })();
 
   (function checkSymbol() {
-    if (globalScope.Symbol) {
+    if (globalThis.Symbol) {
       return;
     }
 
-    __w_pdfjs_require__(123);
+    __w_pdfjs_require__(127);
   })();
 
   (function checkStringPadStart() {
@@ -1356,7 +1378,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(146);
+    __w_pdfjs_require__(152);
   })();
 
   (function checkStringPadEnd() {
@@ -1364,7 +1386,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    __w_pdfjs_require__(152);
+    __w_pdfjs_require__(157);
   })();
 
   (function checkObjectValues() {
@@ -1372,7 +1394,7 @@ if (!globalScope._pdfjsCompatibilityChecked) {
       return;
     }
 
-    Object.values = __w_pdfjs_require__(154);
+    Object.values = __w_pdfjs_require__(159);
   })();
 }
 
@@ -1380,70 +1402,28 @@ if (!globalScope._pdfjsCompatibilityChecked) {
 /* 3 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-"use strict";
-
-
-module.exports = typeof window !== 'undefined' && window.Math === Math ? window : typeof global !== 'undefined' && global.Math === Math ? global : typeof self !== 'undefined' && self.Math === Math ? self : {};
+__w_pdfjs_require__(4);
+module.exports = __w_pdfjs_require__(6);
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-"use strict";
-
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-module.exports = function isNodeJS() {
-  return (typeof process === "undefined" ? "undefined" : _typeof(process)) === 'object' && process + '' === '[object process]' && !process.versions['nw'] && !process.versions['electron'];
-};
+var $ = __w_pdfjs_require__(5);
+var global = __w_pdfjs_require__(6);
+$({ global: true }, { globalThis: global });
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(6);
-var entryUnbind = __w_pdfjs_require__(54);
-module.exports = entryUnbind('String', 'startsWith');
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-"use strict";
-
-var $ = __w_pdfjs_require__(7);
-var toLength = __w_pdfjs_require__(43);
-var notARegExp = __w_pdfjs_require__(49);
-var requireObjectCoercible = __w_pdfjs_require__(17);
-var correctIsRegExpLogic = __w_pdfjs_require__(53);
-var nativeStartsWith = ''.startsWith;
-var min = Math.min;
-$({
- target: 'String',
- proto: true,
- forced: !correctIsRegExpLogic('startsWith')
-}, {
- startsWith: function startsWith(searchString) {
-  var that = String(requireObjectCoercible(this));
-  notARegExp(searchString);
-  var index = toLength(min(arguments.length > 1 ? arguments[1] : undefined, that.length));
-  var search = String(searchString);
-  return nativeStartsWith ? nativeStartsWith.call(that, search, index) : that.slice(index, index + search.length) === search;
- }
-});
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var global = __w_pdfjs_require__(8);
-var getOwnPropertyDescriptor = __w_pdfjs_require__(9).f;
-var hide = __w_pdfjs_require__(23);
-var redefine = __w_pdfjs_require__(26);
-var setGlobal = __w_pdfjs_require__(28);
-var copyConstructorProperties = __w_pdfjs_require__(36);
-var isForced = __w_pdfjs_require__(48);
+var global = __w_pdfjs_require__(6);
+var getOwnPropertyDescriptor = __w_pdfjs_require__(7).f;
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
+var redefine = __w_pdfjs_require__(24);
+var setGlobal = __w_pdfjs_require__(25);
+var copyConstructorProperties = __w_pdfjs_require__(35);
+var isForced = __w_pdfjs_require__(47);
 module.exports = function (options, source) {
  var TARGET = options.target;
  var GLOBAL = options.global;
@@ -1471,33 +1451,32 @@ module.exports = function (options, source) {
     copyConstructorProperties(sourceProperty, targetProperty);
    }
    if (options.sham || targetProperty && targetProperty.sham) {
-    hide(sourceProperty, 'sham', true);
+    createNonEnumerableProperty(sourceProperty, 'sham', true);
    }
    redefine(target, key, sourceProperty, options);
   }
 };
 
 /***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports) {
 
-var O = 'object';
 var check = function (it) {
  return it && it.Math == Math && it;
 };
-module.exports = check(typeof globalThis == O && globalThis) || check(typeof window == O && window) || check(typeof self == O && self) || check(typeof global == O && global) || Function('return this')();
+module.exports = check(typeof globalThis == 'object' && globalThis) || check(typeof window == 'object' && window) || check(typeof self == 'object' && self) || check(typeof global == 'object' && global) || Function('return this')();
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var propertyIsEnumerableModule = __w_pdfjs_require__(12);
-var createPropertyDescriptor = __w_pdfjs_require__(13);
-var toIndexedObject = __w_pdfjs_require__(14);
-var toPrimitive = __w_pdfjs_require__(18);
-var has = __w_pdfjs_require__(20);
-var IE8_DOM_DEFINE = __w_pdfjs_require__(21);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var propertyIsEnumerableModule = __w_pdfjs_require__(10);
+var createPropertyDescriptor = __w_pdfjs_require__(11);
+var toIndexedObject = __w_pdfjs_require__(12);
+var toPrimitive = __w_pdfjs_require__(16);
+var has = __w_pdfjs_require__(18);
+var IE8_DOM_DEFINE = __w_pdfjs_require__(19);
 var nativeGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 exports.f = DESCRIPTORS ? nativeGetOwnPropertyDescriptor : function getOwnPropertyDescriptor(O, P) {
  O = toIndexedObject(O);
@@ -1512,10 +1491,10 @@ exports.f = DESCRIPTORS ? nativeGetOwnPropertyDescriptor : function getOwnProper
 };
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var fails = __w_pdfjs_require__(11);
+var fails = __w_pdfjs_require__(9);
 module.exports = !fails(function () {
  return Object.defineProperty({}, 'a', {
   get: function () {
@@ -1525,7 +1504,7 @@ module.exports = !fails(function () {
 });
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -1537,7 +1516,7 @@ module.exports = function (exec) {
 };
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
@@ -1551,7 +1530,7 @@ exports.f = NASHORN_BUG ? function propertyIsEnumerable(V) {
 } : nativePropertyIsEnumerable;
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = function (bitmap, value) {
@@ -1564,21 +1543,21 @@ module.exports = function (bitmap, value) {
 };
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var IndexedObject = __w_pdfjs_require__(15);
-var requireObjectCoercible = __w_pdfjs_require__(17);
+var IndexedObject = __w_pdfjs_require__(13);
+var requireObjectCoercible = __w_pdfjs_require__(15);
 module.exports = function (it) {
  return IndexedObject(requireObjectCoercible(it));
 };
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var fails = __w_pdfjs_require__(11);
-var classof = __w_pdfjs_require__(16);
+var fails = __w_pdfjs_require__(9);
+var classof = __w_pdfjs_require__(14);
 var split = ''.split;
 module.exports = fails(function () {
  return !Object('z').propertyIsEnumerable(0);
@@ -1587,7 +1566,7 @@ module.exports = fails(function () {
 } : Object;
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -1596,7 +1575,7 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -1606,10 +1585,10 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isObject = __w_pdfjs_require__(19);
+var isObject = __w_pdfjs_require__(17);
 module.exports = function (input, PREFERRED_STRING) {
  if (!isObject(input))
   return input;
@@ -1624,7 +1603,7 @@ module.exports = function (input, PREFERRED_STRING) {
 };
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -1632,7 +1611,7 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 20 */
+/* 18 */
 /***/ (function(module, exports) {
 
 var hasOwnProperty = {}.hasOwnProperty;
@@ -1641,12 +1620,12 @@ module.exports = function (it, key) {
 };
 
 /***/ }),
-/* 21 */
+/* 19 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var fails = __w_pdfjs_require__(11);
-var createElement = __w_pdfjs_require__(22);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var fails = __w_pdfjs_require__(9);
+var createElement = __w_pdfjs_require__(20);
 module.exports = !DESCRIPTORS && !fails(function () {
  return Object.defineProperty(createElement('div'), 'a', {
   get: function () {
@@ -1656,11 +1635,11 @@ module.exports = !DESCRIPTORS && !fails(function () {
 });
 
 /***/ }),
-/* 22 */
+/* 20 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var isObject = __w_pdfjs_require__(19);
+var global = __w_pdfjs_require__(6);
+var isObject = __w_pdfjs_require__(17);
 var document = global.document;
 var EXISTS = isObject(document) && isObject(document.createElement);
 module.exports = function (it) {
@@ -1668,12 +1647,12 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 23 */
+/* 21 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var definePropertyModule = __w_pdfjs_require__(24);
-var createPropertyDescriptor = __w_pdfjs_require__(13);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var definePropertyModule = __w_pdfjs_require__(22);
+var createPropertyDescriptor = __w_pdfjs_require__(11);
 module.exports = DESCRIPTORS ? function (object, key, value) {
  return definePropertyModule.f(object, key, createPropertyDescriptor(1, value));
 } : function (object, key, value) {
@@ -1682,13 +1661,13 @@ module.exports = DESCRIPTORS ? function (object, key, value) {
 };
 
 /***/ }),
-/* 24 */
+/* 22 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var IE8_DOM_DEFINE = __w_pdfjs_require__(21);
-var anObject = __w_pdfjs_require__(25);
-var toPrimitive = __w_pdfjs_require__(18);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var IE8_DOM_DEFINE = __w_pdfjs_require__(19);
+var anObject = __w_pdfjs_require__(23);
+var toPrimitive = __w_pdfjs_require__(16);
 var nativeDefineProperty = Object.defineProperty;
 exports.f = DESCRIPTORS ? nativeDefineProperty : function defineProperty(O, P, Attributes) {
  anObject(O);
@@ -1707,10 +1686,10 @@ exports.f = DESCRIPTORS ? nativeDefineProperty : function defineProperty(O, P, A
 };
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isObject = __w_pdfjs_require__(19);
+var isObject = __w_pdfjs_require__(17);
 module.exports = function (it) {
  if (!isObject(it)) {
   throw TypeError(String(it) + ' is not an object');
@@ -1719,29 +1698,25 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 26 */
+/* 24 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var shared = __w_pdfjs_require__(27);
-var hide = __w_pdfjs_require__(23);
-var has = __w_pdfjs_require__(20);
-var setGlobal = __w_pdfjs_require__(28);
-var nativeFunctionToString = __w_pdfjs_require__(30);
-var InternalStateModule = __w_pdfjs_require__(31);
+var global = __w_pdfjs_require__(6);
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
+var has = __w_pdfjs_require__(18);
+var setGlobal = __w_pdfjs_require__(25);
+var inspectSource = __w_pdfjs_require__(26);
+var InternalStateModule = __w_pdfjs_require__(28);
 var getInternalState = InternalStateModule.get;
 var enforceInternalState = InternalStateModule.enforce;
-var TEMPLATE = String(nativeFunctionToString).split('toString');
-shared('inspectSource', function (it) {
- return nativeFunctionToString.call(it);
-});
+var TEMPLATE = String(String).split('String');
 (module.exports = function (O, key, value, options) {
  var unsafe = options ? !!options.unsafe : false;
  var simple = options ? !!options.enumerable : false;
  var noTargetGet = options ? !!options.noTargetGet : false;
  if (typeof value == 'function') {
   if (typeof key == 'string' && !has(value, 'name'))
-   hide(value, 'name', key);
+   createNonEnumerableProperty(value, 'name', key);
   enforceInternalState(value).source = TEMPLATE.join(typeof key == 'string' ? key : '');
  }
  if (O === global) {
@@ -1758,37 +1733,20 @@ shared('inspectSource', function (it) {
  if (simple)
   O[key] = value;
  else
-  hide(O, key, value);
+  createNonEnumerableProperty(O, key, value);
 })(Function.prototype, 'toString', function toString() {
- return typeof this == 'function' && getInternalState(this).source || nativeFunctionToString.call(this);
+ return typeof this == 'function' && getInternalState(this).source || inspectSource(this);
 });
 
 /***/ }),
-/* 27 */
+/* 25 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var setGlobal = __w_pdfjs_require__(28);
-var IS_PURE = __w_pdfjs_require__(29);
-var SHARED = '__core-js_shared__';
-var store = global[SHARED] || setGlobal(SHARED, {});
-(module.exports = function (key, value) {
- return store[key] || (store[key] = value !== undefined ? value : {});
-})('versions', []).push({
- version: '3.2.1',
- mode: IS_PURE ? 'pure' : 'global',
- copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
-});
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var global = __w_pdfjs_require__(8);
-var hide = __w_pdfjs_require__(23);
+var global = __w_pdfjs_require__(6);
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
 module.exports = function (key, value) {
  try {
-  hide(global, key, value);
+  createNonEnumerableProperty(global, key, value);
  } catch (error) {
   global[key] = value;
  }
@@ -1796,29 +1754,39 @@ module.exports = function (key, value) {
 };
 
 /***/ }),
-/* 29 */
-/***/ (function(module, exports) {
-
-module.exports = false;
-
-/***/ }),
-/* 30 */
+/* 26 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var shared = __w_pdfjs_require__(27);
-module.exports = shared('native-function-to-string', Function.toString);
+var store = __w_pdfjs_require__(27);
+var functionToString = Function.toString;
+if (typeof store.inspectSource != 'function') {
+ store.inspectSource = function (it) {
+  return functionToString.call(it);
+ };
+}
+module.exports = store.inspectSource;
 
 /***/ }),
-/* 31 */
+/* 27 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var NATIVE_WEAK_MAP = __w_pdfjs_require__(32);
-var global = __w_pdfjs_require__(8);
-var isObject = __w_pdfjs_require__(19);
-var hide = __w_pdfjs_require__(23);
-var objectHas = __w_pdfjs_require__(20);
-var sharedKey = __w_pdfjs_require__(33);
-var hiddenKeys = __w_pdfjs_require__(35);
+var global = __w_pdfjs_require__(6);
+var setGlobal = __w_pdfjs_require__(25);
+var SHARED = '__core-js_shared__';
+var store = global[SHARED] || setGlobal(SHARED, {});
+module.exports = store;
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var NATIVE_WEAK_MAP = __w_pdfjs_require__(29);
+var global = __w_pdfjs_require__(6);
+var isObject = __w_pdfjs_require__(17);
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
+var objectHas = __w_pdfjs_require__(18);
+var sharedKey = __w_pdfjs_require__(30);
+var hiddenKeys = __w_pdfjs_require__(34);
 var WeakMap = global.WeakMap;
 var set, get, has;
 var enforce = function (it) {
@@ -1852,7 +1820,7 @@ if (NATIVE_WEAK_MAP) {
  var STATE = sharedKey('state');
  hiddenKeys[STATE] = true;
  set = function (it, metadata) {
-  hide(it, STATE, metadata);
+  createNonEnumerableProperty(it, STATE, metadata);
   return metadata;
  };
  get = function (it) {
@@ -1871,27 +1839,47 @@ module.exports = {
 };
 
 /***/ }),
-/* 32 */
+/* 29 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var nativeFunctionToString = __w_pdfjs_require__(30);
+var global = __w_pdfjs_require__(6);
+var inspectSource = __w_pdfjs_require__(26);
 var WeakMap = global.WeakMap;
-module.exports = typeof WeakMap === 'function' && /native code/.test(nativeFunctionToString.call(WeakMap));
+module.exports = typeof WeakMap === 'function' && /native code/.test(inspectSource(WeakMap));
 
 /***/ }),
-/* 33 */
+/* 30 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var shared = __w_pdfjs_require__(27);
-var uid = __w_pdfjs_require__(34);
+var shared = __w_pdfjs_require__(31);
+var uid = __w_pdfjs_require__(33);
 var keys = shared('keys');
 module.exports = function (key) {
  return keys[key] || (keys[key] = uid(key));
 };
 
 /***/ }),
-/* 34 */
+/* 31 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var IS_PURE = __w_pdfjs_require__(32);
+var store = __w_pdfjs_require__(27);
+(module.exports = function (key, value) {
+ return store[key] || (store[key] = value !== undefined ? value : {});
+})('versions', []).push({
+ version: '3.6.1',
+ mode: IS_PURE ? 'pure' : 'global',
+ copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+});
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = false;
+
+/***/ }),
+/* 33 */
 /***/ (function(module, exports) {
 
 var id = 0;
@@ -1901,19 +1889,19 @@ module.exports = function (key) {
 };
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = {};
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var has = __w_pdfjs_require__(20);
-var ownKeys = __w_pdfjs_require__(37);
-var getOwnPropertyDescriptorModule = __w_pdfjs_require__(9);
-var definePropertyModule = __w_pdfjs_require__(24);
+var has = __w_pdfjs_require__(18);
+var ownKeys = __w_pdfjs_require__(36);
+var getOwnPropertyDescriptorModule = __w_pdfjs_require__(7);
+var definePropertyModule = __w_pdfjs_require__(22);
 module.exports = function (target, source) {
  var keys = ownKeys(source);
  var defineProperty = definePropertyModule.f;
@@ -1926,13 +1914,13 @@ module.exports = function (target, source) {
 };
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var getBuiltIn = __w_pdfjs_require__(38);
-var getOwnPropertyNamesModule = __w_pdfjs_require__(40);
-var getOwnPropertySymbolsModule = __w_pdfjs_require__(47);
-var anObject = __w_pdfjs_require__(25);
+var getBuiltIn = __w_pdfjs_require__(37);
+var getOwnPropertyNamesModule = __w_pdfjs_require__(39);
+var getOwnPropertySymbolsModule = __w_pdfjs_require__(46);
+var anObject = __w_pdfjs_require__(23);
 module.exports = getBuiltIn('Reflect', 'ownKeys') || function ownKeys(it) {
  var keys = getOwnPropertyNamesModule.f(anObject(it));
  var getOwnPropertySymbols = getOwnPropertySymbolsModule.f;
@@ -1940,11 +1928,11 @@ module.exports = getBuiltIn('Reflect', 'ownKeys') || function ownKeys(it) {
 };
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var path = __w_pdfjs_require__(39);
-var global = __w_pdfjs_require__(8);
+var path = __w_pdfjs_require__(38);
+var global = __w_pdfjs_require__(6);
 var aFunction = function (variable) {
  return typeof variable == 'function' ? variable : undefined;
 };
@@ -1953,30 +1941,31 @@ module.exports = function (namespace, method) {
 };
 
 /***/ }),
+/* 38 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var global = __w_pdfjs_require__(6);
+module.exports = global;
+
+/***/ }),
 /* 39 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-module.exports = __w_pdfjs_require__(8);
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var internalObjectKeys = __w_pdfjs_require__(41);
-var enumBugKeys = __w_pdfjs_require__(46);
+var internalObjectKeys = __w_pdfjs_require__(40);
+var enumBugKeys = __w_pdfjs_require__(45);
 var hiddenKeys = enumBugKeys.concat('length', 'prototype');
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
  return internalObjectKeys(O, hiddenKeys);
 };
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var has = __w_pdfjs_require__(20);
-var toIndexedObject = __w_pdfjs_require__(14);
-var indexOf = __w_pdfjs_require__(42).indexOf;
-var hiddenKeys = __w_pdfjs_require__(35);
+var has = __w_pdfjs_require__(18);
+var toIndexedObject = __w_pdfjs_require__(12);
+var indexOf = __w_pdfjs_require__(41).indexOf;
+var hiddenKeys = __w_pdfjs_require__(34);
 module.exports = function (object, names) {
  var O = toIndexedObject(object);
  var i = 0;
@@ -1992,12 +1981,12 @@ module.exports = function (object, names) {
 };
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var toIndexedObject = __w_pdfjs_require__(14);
-var toLength = __w_pdfjs_require__(43);
-var toAbsoluteIndex = __w_pdfjs_require__(45);
+var toIndexedObject = __w_pdfjs_require__(12);
+var toLength = __w_pdfjs_require__(42);
+var toAbsoluteIndex = __w_pdfjs_require__(44);
 var createMethod = function (IS_INCLUDES) {
  return function ($this, el, fromIndex) {
   var O = toIndexedObject($this);
@@ -2024,17 +2013,17 @@ module.exports = {
 };
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var toInteger = __w_pdfjs_require__(44);
+var toInteger = __w_pdfjs_require__(43);
 var min = Math.min;
 module.exports = function (argument) {
  return argument > 0 ? min(toInteger(argument), 0x1FFFFFFFFFFFFF) : 0;
 };
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports) {
 
 var ceil = Math.ceil;
@@ -2044,10 +2033,10 @@ module.exports = function (argument) {
 };
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var toInteger = __w_pdfjs_require__(44);
+var toInteger = __w_pdfjs_require__(43);
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -2056,7 +2045,7 @@ module.exports = function (index, length) {
 };
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -2070,16 +2059,16 @@ module.exports = [
 ];
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports) {
 
 exports.f = Object.getOwnPropertySymbols;
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var fails = __w_pdfjs_require__(11);
+var fails = __w_pdfjs_require__(9);
 var replacement = /#|\.prototype\./;
 var isForced = function (feature, detection) {
  var value = data[normalize(feature)];
@@ -2094,10 +2083,69 @@ var POLYFILL = isForced.POLYFILL = 'P';
 module.exports = isForced;
 
 /***/ }),
+/* 48 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.isNodeJS = void 0;
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+var isNodeJS = (typeof process === "undefined" ? "undefined" : _typeof(process)) === "object" && process + "" === "[object process]" && !process.versions["nw"] && !process.versions["electron"];
+exports.isNodeJS = isNodeJS;
+
+/***/ }),
 /* 49 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isRegExp = __w_pdfjs_require__(50);
+__w_pdfjs_require__(50);
+var entryUnbind = __w_pdfjs_require__(57);
+module.exports = entryUnbind('String', 'startsWith');
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+"use strict";
+
+var $ = __w_pdfjs_require__(5);
+var getOwnPropertyDescriptor = __w_pdfjs_require__(7).f;
+var toLength = __w_pdfjs_require__(42);
+var notARegExp = __w_pdfjs_require__(51);
+var requireObjectCoercible = __w_pdfjs_require__(15);
+var correctIsRegExpLogic = __w_pdfjs_require__(56);
+var IS_PURE = __w_pdfjs_require__(32);
+var nativeStartsWith = ''.startsWith;
+var min = Math.min;
+var CORRECT_IS_REGEXP_LOGIC = correctIsRegExpLogic('startsWith');
+var MDN_POLYFILL_BUG = !IS_PURE && !CORRECT_IS_REGEXP_LOGIC && !!function () {
+ var descriptor = getOwnPropertyDescriptor(String.prototype, 'startsWith');
+ return descriptor && !descriptor.writable;
+}();
+$({
+ target: 'String',
+ proto: true,
+ forced: !MDN_POLYFILL_BUG && !CORRECT_IS_REGEXP_LOGIC
+}, {
+ startsWith: function startsWith(searchString) {
+  var that = String(requireObjectCoercible(this));
+  notARegExp(searchString);
+  var index = toLength(min(arguments.length > 1 ? arguments[1] : undefined, that.length));
+  var search = String(searchString);
+  return nativeStartsWith ? nativeStartsWith.call(that, search, index) : that.slice(index, index + search.length) === search;
+ }
+});
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var isRegExp = __w_pdfjs_require__(52);
 module.exports = function (it) {
  if (isRegExp(it)) {
   throw TypeError("The method doesn't accept regular expressions");
@@ -2106,12 +2154,12 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isObject = __w_pdfjs_require__(19);
-var classof = __w_pdfjs_require__(16);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var isObject = __w_pdfjs_require__(17);
+var classof = __w_pdfjs_require__(14);
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var MATCH = wellKnownSymbol('match');
 module.exports = function (it) {
  var isRegExp;
@@ -2119,33 +2167,49 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 51 */
+/* 53 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var shared = __w_pdfjs_require__(27);
-var uid = __w_pdfjs_require__(34);
-var NATIVE_SYMBOL = __w_pdfjs_require__(52);
+var global = __w_pdfjs_require__(6);
+var shared = __w_pdfjs_require__(31);
+var has = __w_pdfjs_require__(18);
+var uid = __w_pdfjs_require__(33);
+var NATIVE_SYMBOL = __w_pdfjs_require__(54);
+var USE_SYMBOL_AS_UID = __w_pdfjs_require__(55);
+var WellKnownSymbolsStore = shared('wks');
 var Symbol = global.Symbol;
-var store = shared('wks');
+var createWellKnownSymbol = USE_SYMBOL_AS_UID ? Symbol : Symbol && Symbol.withoutSetter || uid;
 module.exports = function (name) {
- return store[name] || (store[name] = NATIVE_SYMBOL && Symbol[name] || (NATIVE_SYMBOL ? Symbol : uid)('Symbol.' + name));
+ if (!has(WellKnownSymbolsStore, name)) {
+  if (NATIVE_SYMBOL && has(Symbol, name))
+   WellKnownSymbolsStore[name] = Symbol[name];
+  else
+   WellKnownSymbolsStore[name] = createWellKnownSymbol('Symbol.' + name);
+ }
+ return WellKnownSymbolsStore[name];
 };
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var fails = __w_pdfjs_require__(11);
+var fails = __w_pdfjs_require__(9);
 module.exports = !!Object.getOwnPropertySymbols && !fails(function () {
  return !String(Symbol());
 });
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var NATIVE_SYMBOL = __w_pdfjs_require__(54);
+module.exports = NATIVE_SYMBOL && !Symbol.sham && typeof Symbol.iterator == 'symbol';
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var MATCH = wellKnownSymbol('match');
 module.exports = function (METHOD_NAME) {
  var regexp = /./;
@@ -2162,21 +2226,21 @@ module.exports = function (METHOD_NAME) {
 };
 
 /***/ }),
-/* 54 */
+/* 57 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var bind = __w_pdfjs_require__(55);
+var global = __w_pdfjs_require__(6);
+var bind = __w_pdfjs_require__(58);
 var call = Function.call;
 module.exports = function (CONSTRUCTOR, METHOD, length) {
  return bind(call, global[CONSTRUCTOR].prototype[METHOD], length);
 };
 
 /***/ }),
-/* 55 */
+/* 58 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var aFunction = __w_pdfjs_require__(56);
+var aFunction = __w_pdfjs_require__(59);
 module.exports = function (fn, that, length) {
  aFunction(fn);
  if (that === undefined)
@@ -2205,7 +2269,7 @@ module.exports = function (fn, that, length) {
 };
 
 /***/ }),
-/* 56 */
+/* 59 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -2216,30 +2280,37 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 57 */
+/* 60 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(58);
-var entryUnbind = __w_pdfjs_require__(54);
+__w_pdfjs_require__(61);
+var entryUnbind = __w_pdfjs_require__(57);
 module.exports = entryUnbind('String', 'endsWith');
 
 /***/ }),
-/* 58 */
+/* 61 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var toLength = __w_pdfjs_require__(43);
-var notARegExp = __w_pdfjs_require__(49);
-var requireObjectCoercible = __w_pdfjs_require__(17);
-var correctIsRegExpLogic = __w_pdfjs_require__(53);
+var $ = __w_pdfjs_require__(5);
+var getOwnPropertyDescriptor = __w_pdfjs_require__(7).f;
+var toLength = __w_pdfjs_require__(42);
+var notARegExp = __w_pdfjs_require__(51);
+var requireObjectCoercible = __w_pdfjs_require__(15);
+var correctIsRegExpLogic = __w_pdfjs_require__(56);
+var IS_PURE = __w_pdfjs_require__(32);
 var nativeEndsWith = ''.endsWith;
 var min = Math.min;
+var CORRECT_IS_REGEXP_LOGIC = correctIsRegExpLogic('endsWith');
+var MDN_POLYFILL_BUG = !IS_PURE && !CORRECT_IS_REGEXP_LOGIC && !!function () {
+ var descriptor = getOwnPropertyDescriptor(String.prototype, 'endsWith');
+ return descriptor && !descriptor.writable;
+}();
 $({
  target: 'String',
  proto: true,
- forced: !correctIsRegExpLogic('endsWith')
+ forced: !MDN_POLYFILL_BUG && !CORRECT_IS_REGEXP_LOGIC
 }, {
  endsWith: function endsWith(searchString) {
   var that = String(requireObjectCoercible(this));
@@ -2253,23 +2324,23 @@ $({
 });
 
 /***/ }),
-/* 59 */
+/* 62 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(60);
-var entryUnbind = __w_pdfjs_require__(54);
+__w_pdfjs_require__(63);
+var entryUnbind = __w_pdfjs_require__(57);
 module.exports = entryUnbind('String', 'includes');
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var notARegExp = __w_pdfjs_require__(49);
-var requireObjectCoercible = __w_pdfjs_require__(17);
-var correctIsRegExpLogic = __w_pdfjs_require__(53);
+var $ = __w_pdfjs_require__(5);
+var notARegExp = __w_pdfjs_require__(51);
+var requireObjectCoercible = __w_pdfjs_require__(15);
+var correctIsRegExpLogic = __w_pdfjs_require__(56);
 $({
  target: 'String',
  proto: true,
@@ -2281,22 +2352,22 @@ $({
 });
 
 /***/ }),
-/* 61 */
+/* 64 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(62);
-var entryUnbind = __w_pdfjs_require__(54);
+__w_pdfjs_require__(65);
+var entryUnbind = __w_pdfjs_require__(57);
 module.exports = entryUnbind('Array', 'includes');
 
 /***/ }),
-/* 62 */
+/* 65 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var $includes = __w_pdfjs_require__(42).includes;
-var addToUnscopables = __w_pdfjs_require__(63);
+var $ = __w_pdfjs_require__(5);
+var $includes = __w_pdfjs_require__(41).includes;
+var addToUnscopables = __w_pdfjs_require__(66);
 $({
  target: 'Array',
  proto: true
@@ -2308,77 +2379,98 @@ $({
 addToUnscopables('includes');
 
 /***/ }),
-/* 63 */
+/* 66 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var wellKnownSymbol = __w_pdfjs_require__(51);
-var create = __w_pdfjs_require__(64);
-var hide = __w_pdfjs_require__(23);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var create = __w_pdfjs_require__(67);
+var definePropertyModule = __w_pdfjs_require__(22);
 var UNSCOPABLES = wellKnownSymbol('unscopables');
 var ArrayPrototype = Array.prototype;
 if (ArrayPrototype[UNSCOPABLES] == undefined) {
- hide(ArrayPrototype, UNSCOPABLES, create(null));
+ definePropertyModule.f(ArrayPrototype, UNSCOPABLES, {
+  configurable: true,
+  value: create(null)
+ });
 }
 module.exports = function (key) {
  ArrayPrototype[UNSCOPABLES][key] = true;
 };
 
 /***/ }),
-/* 64 */
+/* 67 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var anObject = __w_pdfjs_require__(25);
-var defineProperties = __w_pdfjs_require__(65);
-var enumBugKeys = __w_pdfjs_require__(46);
-var hiddenKeys = __w_pdfjs_require__(35);
-var html = __w_pdfjs_require__(67);
-var documentCreateElement = __w_pdfjs_require__(22);
-var sharedKey = __w_pdfjs_require__(33);
-var IE_PROTO = sharedKey('IE_PROTO');
+var anObject = __w_pdfjs_require__(23);
+var defineProperties = __w_pdfjs_require__(68);
+var enumBugKeys = __w_pdfjs_require__(45);
+var hiddenKeys = __w_pdfjs_require__(34);
+var html = __w_pdfjs_require__(70);
+var documentCreateElement = __w_pdfjs_require__(20);
+var sharedKey = __w_pdfjs_require__(30);
+var GT = '>';
+var LT = '<';
 var PROTOTYPE = 'prototype';
-var Empty = function () {
+var SCRIPT = 'script';
+var IE_PROTO = sharedKey('IE_PROTO');
+var EmptyConstructor = function () {
 };
-var createDict = function () {
+var scriptTag = function (content) {
+ return LT + SCRIPT + GT + content + LT + '/' + SCRIPT + GT;
+};
+var NullProtoObjectViaActiveX = function (activeXDocument) {
+ activeXDocument.write(scriptTag(''));
+ activeXDocument.close();
+ var temp = activeXDocument.parentWindow.Object;
+ activeXDocument = null;
+ return temp;
+};
+var NullProtoObjectViaIFrame = function () {
  var iframe = documentCreateElement('iframe');
- var length = enumBugKeys.length;
- var lt = '<';
- var script = 'script';
- var gt = '>';
- var js = 'java' + script + ':';
+ var JS = 'java' + SCRIPT + ':';
  var iframeDocument;
  iframe.style.display = 'none';
  html.appendChild(iframe);
- iframe.src = String(js);
+ iframe.src = String(JS);
  iframeDocument = iframe.contentWindow.document;
  iframeDocument.open();
- iframeDocument.write(lt + script + gt + 'document.F=Object' + lt + '/' + script + gt);
+ iframeDocument.write(scriptTag('document.F=Object'));
  iframeDocument.close();
- createDict = iframeDocument.F;
- while (length--)
-  delete createDict[PROTOTYPE][enumBugKeys[length]];
- return createDict();
+ return iframeDocument.F;
 };
+var activeXDocument;
+var NullProtoObject = function () {
+ try {
+  activeXDocument = document.domain && new ActiveXObject('htmlfile');
+ } catch (error) {
+ }
+ NullProtoObject = activeXDocument ? NullProtoObjectViaActiveX(activeXDocument) : NullProtoObjectViaIFrame();
+ var length = enumBugKeys.length;
+ while (length--)
+  delete NullProtoObject[PROTOTYPE][enumBugKeys[length]];
+ return NullProtoObject();
+};
+hiddenKeys[IE_PROTO] = true;
 module.exports = Object.create || function create(O, Properties) {
  var result;
  if (O !== null) {
-  Empty[PROTOTYPE] = anObject(O);
-  result = new Empty();
-  Empty[PROTOTYPE] = null;
+  EmptyConstructor[PROTOTYPE] = anObject(O);
+  result = new EmptyConstructor();
+  EmptyConstructor[PROTOTYPE] = null;
   result[IE_PROTO] = O;
  } else
-  result = createDict();
+  result = NullProtoObject();
  return Properties === undefined ? result : defineProperties(result, Properties);
 };
-hiddenKeys[IE_PROTO] = true;
 
 /***/ }),
-/* 65 */
+/* 68 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var definePropertyModule = __w_pdfjs_require__(24);
-var anObject = __w_pdfjs_require__(25);
-var objectKeys = __w_pdfjs_require__(66);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var definePropertyModule = __w_pdfjs_require__(22);
+var anObject = __w_pdfjs_require__(23);
+var objectKeys = __w_pdfjs_require__(69);
 module.exports = DESCRIPTORS ? Object.defineProperties : function defineProperties(O, Properties) {
  anObject(O);
  var keys = objectKeys(Properties);
@@ -2391,40 +2483,40 @@ module.exports = DESCRIPTORS ? Object.defineProperties : function defineProperti
 };
 
 /***/ }),
-/* 66 */
+/* 69 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var internalObjectKeys = __w_pdfjs_require__(41);
-var enumBugKeys = __w_pdfjs_require__(46);
+var internalObjectKeys = __w_pdfjs_require__(40);
+var enumBugKeys = __w_pdfjs_require__(45);
 module.exports = Object.keys || function keys(O) {
  return internalObjectKeys(O, enumBugKeys);
 };
 
 /***/ }),
-/* 67 */
+/* 70 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var getBuiltIn = __w_pdfjs_require__(38);
+var getBuiltIn = __w_pdfjs_require__(37);
 module.exports = getBuiltIn('document', 'documentElement');
 
 /***/ }),
-/* 68 */
+/* 71 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(69);
-__w_pdfjs_require__(81);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(72);
+__w_pdfjs_require__(84);
+var path = __w_pdfjs_require__(38);
 module.exports = path.Array.from;
 
 /***/ }),
-/* 69 */
+/* 72 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var charAt = __w_pdfjs_require__(70).charAt;
-var InternalStateModule = __w_pdfjs_require__(31);
-var defineIterator = __w_pdfjs_require__(71);
+var charAt = __w_pdfjs_require__(73).charAt;
+var InternalStateModule = __w_pdfjs_require__(28);
+var defineIterator = __w_pdfjs_require__(74);
 var STRING_ITERATOR = 'String Iterator';
 var setInternalState = InternalStateModule.set;
 var getInternalState = InternalStateModule.getterFor(STRING_ITERATOR);
@@ -2453,11 +2545,11 @@ defineIterator(String, 'String', function (iterated) {
 });
 
 /***/ }),
-/* 70 */
+/* 73 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var toInteger = __w_pdfjs_require__(44);
-var requireObjectCoercible = __w_pdfjs_require__(17);
+var toInteger = __w_pdfjs_require__(43);
+var requireObjectCoercible = __w_pdfjs_require__(15);
 var createMethod = function (CONVERT_TO_STRING) {
  return function ($this, pos) {
   var S = String(requireObjectCoercible($this));
@@ -2476,22 +2568,22 @@ module.exports = {
 };
 
 /***/ }),
-/* 71 */
+/* 74 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var createIteratorConstructor = __w_pdfjs_require__(72);
-var getPrototypeOf = __w_pdfjs_require__(74);
-var setPrototypeOf = __w_pdfjs_require__(79);
-var setToStringTag = __w_pdfjs_require__(77);
-var hide = __w_pdfjs_require__(23);
-var redefine = __w_pdfjs_require__(26);
-var wellKnownSymbol = __w_pdfjs_require__(51);
-var IS_PURE = __w_pdfjs_require__(29);
-var Iterators = __w_pdfjs_require__(78);
-var IteratorsCore = __w_pdfjs_require__(73);
+var $ = __w_pdfjs_require__(5);
+var createIteratorConstructor = __w_pdfjs_require__(75);
+var getPrototypeOf = __w_pdfjs_require__(77);
+var setPrototypeOf = __w_pdfjs_require__(82);
+var setToStringTag = __w_pdfjs_require__(80);
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
+var redefine = __w_pdfjs_require__(24);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var IS_PURE = __w_pdfjs_require__(32);
+var Iterators = __w_pdfjs_require__(81);
+var IteratorsCore = __w_pdfjs_require__(76);
 var IteratorPrototype = IteratorsCore.IteratorPrototype;
 var BUGGY_SAFARI_ITERATORS = IteratorsCore.BUGGY_SAFARI_ITERATORS;
 var ITERATOR = wellKnownSymbol('iterator');
@@ -2540,7 +2632,7 @@ module.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, I
     if (setPrototypeOf) {
      setPrototypeOf(CurrentIteratorPrototype, IteratorPrototype);
     } else if (typeof CurrentIteratorPrototype[ITERATOR] != 'function') {
-     hide(CurrentIteratorPrototype, ITERATOR, returnThis);
+     createNonEnumerableProperty(CurrentIteratorPrototype, ITERATOR, returnThis);
     }
    }
    setToStringTag(CurrentIteratorPrototype, TO_STRING_TAG, true, true);
@@ -2555,7 +2647,7 @@ module.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, I
   };
  }
  if ((!IS_PURE || FORCED) && IterablePrototype[ITERATOR] !== defaultIterator) {
-  hide(IterablePrototype, ITERATOR, defaultIterator);
+  createNonEnumerableProperty(IterablePrototype, ITERATOR, defaultIterator);
  }
  Iterators[NAME] = defaultIterator;
  if (DEFAULT) {
@@ -2581,16 +2673,16 @@ module.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, I
 };
 
 /***/ }),
-/* 72 */
+/* 75 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var IteratorPrototype = __w_pdfjs_require__(73).IteratorPrototype;
-var create = __w_pdfjs_require__(64);
-var createPropertyDescriptor = __w_pdfjs_require__(13);
-var setToStringTag = __w_pdfjs_require__(77);
-var Iterators = __w_pdfjs_require__(78);
+var IteratorPrototype = __w_pdfjs_require__(76).IteratorPrototype;
+var create = __w_pdfjs_require__(67);
+var createPropertyDescriptor = __w_pdfjs_require__(11);
+var setToStringTag = __w_pdfjs_require__(80);
+var Iterators = __w_pdfjs_require__(81);
 var returnThis = function () {
  return this;
 };
@@ -2603,16 +2695,16 @@ module.exports = function (IteratorConstructor, NAME, next) {
 };
 
 /***/ }),
-/* 73 */
+/* 76 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var getPrototypeOf = __w_pdfjs_require__(74);
-var hide = __w_pdfjs_require__(23);
-var has = __w_pdfjs_require__(20);
-var wellKnownSymbol = __w_pdfjs_require__(51);
-var IS_PURE = __w_pdfjs_require__(29);
+var getPrototypeOf = __w_pdfjs_require__(77);
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
+var has = __w_pdfjs_require__(18);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var IS_PURE = __w_pdfjs_require__(32);
 var ITERATOR = wellKnownSymbol('iterator');
 var BUGGY_SAFARI_ITERATORS = false;
 var returnThis = function () {
@@ -2631,21 +2723,22 @@ if ([].keys) {
 }
 if (IteratorPrototype == undefined)
  IteratorPrototype = {};
-if (!IS_PURE && !has(IteratorPrototype, ITERATOR))
- hide(IteratorPrototype, ITERATOR, returnThis);
+if (!IS_PURE && !has(IteratorPrototype, ITERATOR)) {
+ createNonEnumerableProperty(IteratorPrototype, ITERATOR, returnThis);
+}
 module.exports = {
  IteratorPrototype: IteratorPrototype,
  BUGGY_SAFARI_ITERATORS: BUGGY_SAFARI_ITERATORS
 };
 
 /***/ }),
-/* 74 */
+/* 77 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var has = __w_pdfjs_require__(20);
-var toObject = __w_pdfjs_require__(75);
-var sharedKey = __w_pdfjs_require__(33);
-var CORRECT_PROTOTYPE_GETTER = __w_pdfjs_require__(76);
+var has = __w_pdfjs_require__(18);
+var toObject = __w_pdfjs_require__(78);
+var sharedKey = __w_pdfjs_require__(30);
+var CORRECT_PROTOTYPE_GETTER = __w_pdfjs_require__(79);
 var IE_PROTO = sharedKey('IE_PROTO');
 var ObjectPrototype = Object.prototype;
 module.exports = CORRECT_PROTOTYPE_GETTER ? Object.getPrototypeOf : function (O) {
@@ -2659,19 +2752,19 @@ module.exports = CORRECT_PROTOTYPE_GETTER ? Object.getPrototypeOf : function (O)
 };
 
 /***/ }),
-/* 75 */
+/* 78 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var requireObjectCoercible = __w_pdfjs_require__(17);
+var requireObjectCoercible = __w_pdfjs_require__(15);
 module.exports = function (argument) {
  return Object(requireObjectCoercible(argument));
 };
 
 /***/ }),
-/* 76 */
+/* 79 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var fails = __w_pdfjs_require__(11);
+var fails = __w_pdfjs_require__(9);
 module.exports = !fails(function () {
  function F() {
  }
@@ -2680,12 +2773,12 @@ module.exports = !fails(function () {
 });
 
 /***/ }),
-/* 77 */
+/* 80 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineProperty = __w_pdfjs_require__(24).f;
-var has = __w_pdfjs_require__(20);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var defineProperty = __w_pdfjs_require__(22).f;
+var has = __w_pdfjs_require__(18);
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var TO_STRING_TAG = wellKnownSymbol('toStringTag');
 module.exports = function (it, TAG, STATIC) {
  if (it && !has(it = STATIC ? it : it.prototype, TO_STRING_TAG)) {
@@ -2697,17 +2790,17 @@ module.exports = function (it, TAG, STATIC) {
 };
 
 /***/ }),
-/* 78 */
+/* 81 */
 /***/ (function(module, exports) {
 
 module.exports = {};
 
 /***/ }),
-/* 79 */
+/* 82 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var anObject = __w_pdfjs_require__(25);
-var aPossiblePrototype = __w_pdfjs_require__(80);
+var anObject = __w_pdfjs_require__(23);
+var aPossiblePrototype = __w_pdfjs_require__(83);
 module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
  var CORRECT_SETTER = false;
  var test = {};
@@ -2730,10 +2823,10 @@ module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
 }() : undefined);
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isObject = __w_pdfjs_require__(19);
+var isObject = __w_pdfjs_require__(17);
 module.exports = function (it) {
  if (!isObject(it) && it !== null) {
   throw TypeError("Can't set " + String(it) + ' as a prototype');
@@ -2742,12 +2835,12 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var $ = __w_pdfjs_require__(7);
-var from = __w_pdfjs_require__(82);
-var checkCorrectnessOfIteration = __w_pdfjs_require__(88);
+var $ = __w_pdfjs_require__(5);
+var from = __w_pdfjs_require__(85);
+var checkCorrectnessOfIteration = __w_pdfjs_require__(92);
 var INCORRECT_ITERATION = !checkCorrectnessOfIteration(function (iterable) {
  Array.from(iterable);
 });
@@ -2758,18 +2851,18 @@ $({
 }, { from: from });
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var bind = __w_pdfjs_require__(55);
-var toObject = __w_pdfjs_require__(75);
-var callWithSafeIterationClosing = __w_pdfjs_require__(83);
-var isArrayIteratorMethod = __w_pdfjs_require__(84);
-var toLength = __w_pdfjs_require__(43);
-var createProperty = __w_pdfjs_require__(85);
-var getIteratorMethod = __w_pdfjs_require__(86);
+var bind = __w_pdfjs_require__(58);
+var toObject = __w_pdfjs_require__(78);
+var callWithSafeIterationClosing = __w_pdfjs_require__(86);
+var isArrayIteratorMethod = __w_pdfjs_require__(87);
+var toLength = __w_pdfjs_require__(42);
+var createProperty = __w_pdfjs_require__(88);
+var getIteratorMethod = __w_pdfjs_require__(89);
 module.exports = function from(arrayLike) {
  var O = toObject(arrayLike);
  var C = typeof this == 'function' ? this : Array;
@@ -2778,13 +2871,14 @@ module.exports = function from(arrayLike) {
  var mapping = mapfn !== undefined;
  var index = 0;
  var iteratorMethod = getIteratorMethod(O);
- var length, result, step, iterator;
+ var length, result, step, iterator, next;
  if (mapping)
   mapfn = bind(mapfn, argumentsLength > 2 ? arguments[2] : undefined, 2);
  if (iteratorMethod != undefined && !(C == Array && isArrayIteratorMethod(iteratorMethod))) {
   iterator = iteratorMethod.call(O);
+  next = iterator.next;
   result = new C();
-  for (; !(step = iterator.next()).done; index++) {
+  for (; !(step = next.call(iterator)).done; index++) {
    createProperty(result, index, mapping ? callWithSafeIterationClosing(iterator, mapfn, [
     step.value,
     index
@@ -2802,10 +2896,10 @@ module.exports = function from(arrayLike) {
 };
 
 /***/ }),
-/* 83 */
+/* 86 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var anObject = __w_pdfjs_require__(25);
+var anObject = __w_pdfjs_require__(23);
 module.exports = function (iterator, fn, value, ENTRIES) {
  try {
   return ENTRIES ? fn(anObject(value)[0], value[1]) : fn(value);
@@ -2818,11 +2912,11 @@ module.exports = function (iterator, fn, value, ENTRIES) {
 };
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var wellKnownSymbol = __w_pdfjs_require__(51);
-var Iterators = __w_pdfjs_require__(78);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var Iterators = __w_pdfjs_require__(81);
 var ITERATOR = wellKnownSymbol('iterator');
 var ArrayPrototype = Array.prototype;
 module.exports = function (it) {
@@ -2830,14 +2924,14 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 85 */
+/* 88 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var toPrimitive = __w_pdfjs_require__(18);
-var definePropertyModule = __w_pdfjs_require__(24);
-var createPropertyDescriptor = __w_pdfjs_require__(13);
+var toPrimitive = __w_pdfjs_require__(16);
+var definePropertyModule = __w_pdfjs_require__(22);
+var createPropertyDescriptor = __w_pdfjs_require__(11);
 module.exports = function (object, key, value) {
  var propertyKey = toPrimitive(key);
  if (propertyKey in object)
@@ -2847,12 +2941,12 @@ module.exports = function (object, key, value) {
 };
 
 /***/ }),
-/* 86 */
+/* 89 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var classof = __w_pdfjs_require__(87);
-var Iterators = __w_pdfjs_require__(78);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var classof = __w_pdfjs_require__(90);
+var Iterators = __w_pdfjs_require__(81);
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var ITERATOR = wellKnownSymbol('iterator');
 module.exports = function (it) {
  if (it != undefined)
@@ -2860,11 +2954,12 @@ module.exports = function (it) {
 };
 
 /***/ }),
-/* 87 */
+/* 90 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var classofRaw = __w_pdfjs_require__(16);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var TO_STRING_TAG_SUPPORT = __w_pdfjs_require__(91);
+var classofRaw = __w_pdfjs_require__(14);
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var TO_STRING_TAG = wellKnownSymbol('toStringTag');
 var CORRECT_ARGUMENTS = classofRaw(function () {
  return arguments;
@@ -2875,16 +2970,26 @@ var tryGet = function (it, key) {
  } catch (error) {
  }
 };
-module.exports = function (it) {
+module.exports = TO_STRING_TAG_SUPPORT ? classofRaw : function (it) {
  var O, tag, result;
  return it === undefined ? 'Undefined' : it === null ? 'Null' : typeof (tag = tryGet(O = Object(it), TO_STRING_TAG)) == 'string' ? tag : CORRECT_ARGUMENTS ? classofRaw(O) : (result = classofRaw(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : result;
 };
 
 /***/ }),
-/* 88 */
+/* 91 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var TO_STRING_TAG = wellKnownSymbol('toStringTag');
+var test = {};
+test[TO_STRING_TAG] = 'z';
+module.exports = String(test) === '[object z]';
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var ITERATOR = wellKnownSymbol('iterator');
 var SAFE_CLOSING = false;
 try {
@@ -2925,19 +3030,19 @@ module.exports = function (exec, SKIP_CLOSING) {
 };
 
 /***/ }),
-/* 89 */
+/* 93 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(90);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(94);
+var path = __w_pdfjs_require__(38);
 module.exports = path.Object.assign;
 
 /***/ }),
-/* 90 */
+/* 94 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var $ = __w_pdfjs_require__(7);
-var assign = __w_pdfjs_require__(91);
+var $ = __w_pdfjs_require__(5);
+var assign = __w_pdfjs_require__(95);
 $({
  target: 'Object',
  stat: true,
@@ -2945,20 +3050,31 @@ $({
 }, { assign: assign });
 
 /***/ }),
-/* 91 */
+/* 95 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var fails = __w_pdfjs_require__(11);
-var objectKeys = __w_pdfjs_require__(66);
-var getOwnPropertySymbolsModule = __w_pdfjs_require__(47);
-var propertyIsEnumerableModule = __w_pdfjs_require__(12);
-var toObject = __w_pdfjs_require__(75);
-var IndexedObject = __w_pdfjs_require__(15);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var fails = __w_pdfjs_require__(9);
+var objectKeys = __w_pdfjs_require__(69);
+var getOwnPropertySymbolsModule = __w_pdfjs_require__(46);
+var propertyIsEnumerableModule = __w_pdfjs_require__(10);
+var toObject = __w_pdfjs_require__(78);
+var IndexedObject = __w_pdfjs_require__(13);
 var nativeAssign = Object.assign;
+var defineProperty = Object.defineProperty;
 module.exports = !nativeAssign || fails(function () {
+ if (DESCRIPTORS && nativeAssign({ b: 1 }, nativeAssign(defineProperty({}, 'a', {
+   enumerable: true,
+   get: function () {
+    defineProperty(this, 'b', {
+     value: 3,
+     enumerable: false
+    });
+   }
+  }), { b: 2 })).b !== 1)
+  return true;
  var A = {};
  var B = {};
  var symbol = Symbol();
@@ -2990,18 +3106,18 @@ module.exports = !nativeAssign || fails(function () {
 } : nativeAssign;
 
 /***/ }),
-/* 92 */
+/* 96 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(93);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(97);
+var path = __w_pdfjs_require__(38);
 module.exports = path.Math.log2;
 
 /***/ }),
-/* 93 */
+/* 97 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var $ = __w_pdfjs_require__(7);
+var $ = __w_pdfjs_require__(5);
 var log = Math.log;
 var LN2 = Math.LN2;
 $({
@@ -3014,18 +3130,18 @@ $({
 });
 
 /***/ }),
-/* 94 */
+/* 98 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(95);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(99);
+var path = __w_pdfjs_require__(38);
 module.exports = path.Number.isNaN;
 
 /***/ }),
-/* 95 */
+/* 99 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var $ = __w_pdfjs_require__(7);
+var $ = __w_pdfjs_require__(5);
 $({
  target: 'Number',
  stat: true
@@ -3036,93 +3152,90 @@ $({
 });
 
 /***/ }),
-/* 96 */
+/* 100 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(97);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(101);
+var path = __w_pdfjs_require__(38);
 module.exports = path.Number.isInteger;
 
 /***/ }),
-/* 97 */
+/* 101 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var $ = __w_pdfjs_require__(7);
-var isInteger = __w_pdfjs_require__(98);
+var $ = __w_pdfjs_require__(5);
+var isInteger = __w_pdfjs_require__(102);
 $({
  target: 'Number',
  stat: true
 }, { isInteger: isInteger });
 
 /***/ }),
-/* 98 */
+/* 102 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isObject = __w_pdfjs_require__(19);
+var isObject = __w_pdfjs_require__(17);
 var floor = Math.floor;
 module.exports = function isInteger(it) {
  return !isObject(it) && isFinite(it) && floor(it) === it;
 };
 
 /***/ }),
-/* 99 */
+/* 103 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(100);
-__w_pdfjs_require__(102);
-__w_pdfjs_require__(114);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(104);
+__w_pdfjs_require__(106);
+__w_pdfjs_require__(118);
+var path = __w_pdfjs_require__(38);
 module.exports = path.WeakMap;
 
 /***/ }),
-/* 100 */
+/* 104 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var redefine = __w_pdfjs_require__(26);
-var toString = __w_pdfjs_require__(101);
-var ObjectPrototype = Object.prototype;
-if (toString !== ObjectPrototype.toString) {
- redefine(ObjectPrototype, 'toString', toString, { unsafe: true });
+var TO_STRING_TAG_SUPPORT = __w_pdfjs_require__(91);
+var redefine = __w_pdfjs_require__(24);
+var toString = __w_pdfjs_require__(105);
+if (!TO_STRING_TAG_SUPPORT) {
+ redefine(Object.prototype, 'toString', toString, { unsafe: true });
 }
 
 /***/ }),
-/* 101 */
+/* 105 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var classof = __w_pdfjs_require__(87);
-var wellKnownSymbol = __w_pdfjs_require__(51);
-var TO_STRING_TAG = wellKnownSymbol('toStringTag');
-var test = {};
-test[TO_STRING_TAG] = 'z';
-module.exports = String(test) !== '[object z]' ? function toString() {
+var TO_STRING_TAG_SUPPORT = __w_pdfjs_require__(91);
+var classof = __w_pdfjs_require__(90);
+module.exports = TO_STRING_TAG_SUPPORT ? {}.toString : function toString() {
  return '[object ' + classof(this) + ']';
-} : test.toString;
+};
 
 /***/ }),
-/* 102 */
+/* 106 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var global = __w_pdfjs_require__(8);
-var redefineAll = __w_pdfjs_require__(103);
-var InternalMetadataModule = __w_pdfjs_require__(104);
-var collection = __w_pdfjs_require__(106);
-var collectionWeak = __w_pdfjs_require__(110);
-var isObject = __w_pdfjs_require__(19);
-var enforceIternalState = __w_pdfjs_require__(31).enforce;
-var NATIVE_WEAK_MAP = __w_pdfjs_require__(32);
+var global = __w_pdfjs_require__(6);
+var redefineAll = __w_pdfjs_require__(107);
+var InternalMetadataModule = __w_pdfjs_require__(108);
+var collection = __w_pdfjs_require__(110);
+var collectionWeak = __w_pdfjs_require__(114);
+var isObject = __w_pdfjs_require__(17);
+var enforceIternalState = __w_pdfjs_require__(28).enforce;
+var NATIVE_WEAK_MAP = __w_pdfjs_require__(29);
 var IS_IE11 = !global.ActiveXObject && 'ActiveXObject' in global;
 var isExtensible = Object.isExtensible;
 var InternalWeakMap;
-var wrapper = function (get) {
+var wrapper = function (init) {
  return function WeakMap() {
-  return get(this, arguments.length ? arguments[0] : undefined);
+  return init(this, arguments.length ? arguments[0] : undefined);
  };
 };
-var $WeakMap = module.exports = collection('WeakMap', wrapper, collectionWeak, true, true);
+var $WeakMap = module.exports = collection('WeakMap', wrapper, collectionWeak);
 if (NATIVE_WEAK_MAP && IS_IE11) {
  InternalWeakMap = collectionWeak.getConstructor(wrapper, 'WeakMap', true);
  InternalMetadataModule.REQUIRED = true;
@@ -3173,10 +3286,10 @@ if (NATIVE_WEAK_MAP && IS_IE11) {
 }
 
 /***/ }),
-/* 103 */
+/* 107 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var redefine = __w_pdfjs_require__(26);
+var redefine = __w_pdfjs_require__(24);
 module.exports = function (target, src, options) {
  for (var key in src)
   redefine(target, key, src[key], options);
@@ -3184,15 +3297,15 @@ module.exports = function (target, src, options) {
 };
 
 /***/ }),
-/* 104 */
+/* 108 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var hiddenKeys = __w_pdfjs_require__(35);
-var isObject = __w_pdfjs_require__(19);
-var has = __w_pdfjs_require__(20);
-var defineProperty = __w_pdfjs_require__(24).f;
-var uid = __w_pdfjs_require__(34);
-var FREEZING = __w_pdfjs_require__(105);
+var hiddenKeys = __w_pdfjs_require__(34);
+var isObject = __w_pdfjs_require__(17);
+var has = __w_pdfjs_require__(18);
+var defineProperty = __w_pdfjs_require__(22).f;
+var uid = __w_pdfjs_require__(33);
+var FREEZING = __w_pdfjs_require__(109);
 var METADATA = uid('meta');
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
@@ -3242,37 +3355,39 @@ var meta = module.exports = {
 hiddenKeys[METADATA] = true;
 
 /***/ }),
-/* 105 */
+/* 109 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var fails = __w_pdfjs_require__(11);
+var fails = __w_pdfjs_require__(9);
 module.exports = !fails(function () {
  return Object.isExtensible(Object.preventExtensions({}));
 });
 
 /***/ }),
-/* 106 */
+/* 110 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var global = __w_pdfjs_require__(8);
-var isForced = __w_pdfjs_require__(48);
-var redefine = __w_pdfjs_require__(26);
-var InternalMetadataModule = __w_pdfjs_require__(104);
-var iterate = __w_pdfjs_require__(107);
-var anInstance = __w_pdfjs_require__(108);
-var isObject = __w_pdfjs_require__(19);
-var fails = __w_pdfjs_require__(11);
-var checkCorrectnessOfIteration = __w_pdfjs_require__(88);
-var setToStringTag = __w_pdfjs_require__(77);
-var inheritIfRequired = __w_pdfjs_require__(109);
-module.exports = function (CONSTRUCTOR_NAME, wrapper, common, IS_MAP, IS_WEAK) {
+var $ = __w_pdfjs_require__(5);
+var global = __w_pdfjs_require__(6);
+var isForced = __w_pdfjs_require__(47);
+var redefine = __w_pdfjs_require__(24);
+var InternalMetadataModule = __w_pdfjs_require__(108);
+var iterate = __w_pdfjs_require__(111);
+var anInstance = __w_pdfjs_require__(112);
+var isObject = __w_pdfjs_require__(17);
+var fails = __w_pdfjs_require__(9);
+var checkCorrectnessOfIteration = __w_pdfjs_require__(92);
+var setToStringTag = __w_pdfjs_require__(80);
+var inheritIfRequired = __w_pdfjs_require__(113);
+module.exports = function (CONSTRUCTOR_NAME, wrapper, common) {
+ var IS_MAP = CONSTRUCTOR_NAME.indexOf('Map') !== -1;
+ var IS_WEAK = CONSTRUCTOR_NAME.indexOf('Weak') !== -1;
+ var ADDER = IS_MAP ? 'set' : 'add';
  var NativeConstructor = global[CONSTRUCTOR_NAME];
  var NativePrototype = NativeConstructor && NativeConstructor.prototype;
  var Constructor = NativeConstructor;
- var ADDER = IS_MAP ? 'set' : 'add';
  var exported = {};
  var fixMethod = function (KEY) {
   var nativeMethod = NativePrototype[KEY];
@@ -3344,22 +3459,22 @@ module.exports = function (CONSTRUCTOR_NAME, wrapper, common, IS_MAP, IS_WEAK) {
 };
 
 /***/ }),
-/* 107 */
+/* 111 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var anObject = __w_pdfjs_require__(25);
-var isArrayIteratorMethod = __w_pdfjs_require__(84);
-var toLength = __w_pdfjs_require__(43);
-var bind = __w_pdfjs_require__(55);
-var getIteratorMethod = __w_pdfjs_require__(86);
-var callWithSafeIterationClosing = __w_pdfjs_require__(83);
+var anObject = __w_pdfjs_require__(23);
+var isArrayIteratorMethod = __w_pdfjs_require__(87);
+var toLength = __w_pdfjs_require__(42);
+var bind = __w_pdfjs_require__(58);
+var getIteratorMethod = __w_pdfjs_require__(89);
+var callWithSafeIterationClosing = __w_pdfjs_require__(86);
 var Result = function (stopped, result) {
  this.stopped = stopped;
  this.result = result;
 };
 var iterate = module.exports = function (iterable, fn, that, AS_ENTRIES, IS_ITERATOR) {
  var boundFunction = bind(fn, that, AS_ENTRIES ? 2 : 1);
- var iterator, iterFn, index, length, result, step;
+ var iterator, iterFn, index, length, result, next, step;
  if (IS_ITERATOR) {
   iterator = iterable;
  } else {
@@ -3376,9 +3491,10 @@ var iterate = module.exports = function (iterable, fn, that, AS_ENTRIES, IS_ITER
   }
   iterator = iterFn.call(iterable);
  }
- while (!(step = iterator.next()).done) {
+ next = iterator.next;
+ while (!(step = next.call(iterator)).done) {
   result = callWithSafeIterationClosing(iterator, boundFunction, step.value, AS_ENTRIES);
-  if (result && result instanceof Result)
+  if (typeof result == 'object' && result && result instanceof Result)
    return result;
  }
  return new Result(false);
@@ -3388,7 +3504,7 @@ iterate.stop = function (result) {
 };
 
 /***/ }),
-/* 108 */
+/* 112 */
 /***/ (function(module, exports) {
 
 module.exports = function (it, Constructor, name) {
@@ -3399,11 +3515,11 @@ module.exports = function (it, Constructor, name) {
 };
 
 /***/ }),
-/* 109 */
+/* 113 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isObject = __w_pdfjs_require__(19);
-var setPrototypeOf = __w_pdfjs_require__(79);
+var isObject = __w_pdfjs_require__(17);
+var setPrototypeOf = __w_pdfjs_require__(82);
 module.exports = function ($this, dummy, Wrapper) {
  var NewTarget, NewTargetPrototype;
  if (setPrototypeOf && typeof (NewTarget = dummy.constructor) == 'function' && NewTarget !== Wrapper && isObject(NewTargetPrototype = NewTarget.prototype) && NewTargetPrototype !== Wrapper.prototype)
@@ -3412,20 +3528,20 @@ module.exports = function ($this, dummy, Wrapper) {
 };
 
 /***/ }),
-/* 110 */
+/* 114 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var redefineAll = __w_pdfjs_require__(103);
-var getWeakData = __w_pdfjs_require__(104).getWeakData;
-var anObject = __w_pdfjs_require__(25);
-var isObject = __w_pdfjs_require__(19);
-var anInstance = __w_pdfjs_require__(108);
-var iterate = __w_pdfjs_require__(107);
-var ArrayIterationModule = __w_pdfjs_require__(111);
-var $has = __w_pdfjs_require__(20);
-var InternalStateModule = __w_pdfjs_require__(31);
+var redefineAll = __w_pdfjs_require__(107);
+var getWeakData = __w_pdfjs_require__(108).getWeakData;
+var anObject = __w_pdfjs_require__(23);
+var isObject = __w_pdfjs_require__(17);
+var anInstance = __w_pdfjs_require__(112);
+var iterate = __w_pdfjs_require__(111);
+var ArrayIterationModule = __w_pdfjs_require__(115);
+var $has = __w_pdfjs_require__(18);
+var InternalStateModule = __w_pdfjs_require__(28);
 var setInternalState = InternalStateModule.set;
 var internalStateGetterFor = InternalStateModule.getterFor;
 var find = ArrayIterationModule.find;
@@ -3535,14 +3651,14 @@ module.exports = {
 };
 
 /***/ }),
-/* 111 */
+/* 115 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var bind = __w_pdfjs_require__(55);
-var IndexedObject = __w_pdfjs_require__(15);
-var toObject = __w_pdfjs_require__(75);
-var toLength = __w_pdfjs_require__(43);
-var arraySpeciesCreate = __w_pdfjs_require__(112);
+var bind = __w_pdfjs_require__(58);
+var IndexedObject = __w_pdfjs_require__(13);
+var toObject = __w_pdfjs_require__(78);
+var toLength = __w_pdfjs_require__(42);
+var arraySpeciesCreate = __w_pdfjs_require__(116);
 var push = [].push;
 var createMethod = function (TYPE) {
  var IS_MAP = TYPE == 1;
@@ -3596,12 +3712,12 @@ module.exports = {
 };
 
 /***/ }),
-/* 112 */
+/* 116 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var isObject = __w_pdfjs_require__(19);
-var isArray = __w_pdfjs_require__(113);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var isObject = __w_pdfjs_require__(17);
+var isArray = __w_pdfjs_require__(117);
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var SPECIES = wellKnownSymbol('species');
 module.exports = function (originalArray, length) {
  var C;
@@ -3619,23 +3735,23 @@ module.exports = function (originalArray, length) {
 };
 
 /***/ }),
-/* 113 */
+/* 117 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var classof = __w_pdfjs_require__(16);
+var classof = __w_pdfjs_require__(14);
 module.exports = Array.isArray || function isArray(arg) {
  return classof(arg) == 'Array';
 };
 
 /***/ }),
-/* 114 */
+/* 118 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var DOMIterables = __w_pdfjs_require__(115);
-var ArrayIteratorMethods = __w_pdfjs_require__(116);
-var hide = __w_pdfjs_require__(23);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var global = __w_pdfjs_require__(6);
+var DOMIterables = __w_pdfjs_require__(119);
+var ArrayIteratorMethods = __w_pdfjs_require__(120);
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
+var wellKnownSymbol = __w_pdfjs_require__(53);
 var ITERATOR = wellKnownSymbol('iterator');
 var TO_STRING_TAG = wellKnownSymbol('toStringTag');
 var ArrayValues = ArrayIteratorMethods.values;
@@ -3645,17 +3761,18 @@ for (var COLLECTION_NAME in DOMIterables) {
  if (CollectionPrototype) {
   if (CollectionPrototype[ITERATOR] !== ArrayValues)
    try {
-    hide(CollectionPrototype, ITERATOR, ArrayValues);
+    createNonEnumerableProperty(CollectionPrototype, ITERATOR, ArrayValues);
    } catch (error) {
     CollectionPrototype[ITERATOR] = ArrayValues;
    }
-  if (!CollectionPrototype[TO_STRING_TAG])
-   hide(CollectionPrototype, TO_STRING_TAG, COLLECTION_NAME);
+  if (!CollectionPrototype[TO_STRING_TAG]) {
+   createNonEnumerableProperty(CollectionPrototype, TO_STRING_TAG, COLLECTION_NAME);
+  }
   if (DOMIterables[COLLECTION_NAME])
    for (var METHOD_NAME in ArrayIteratorMethods) {
     if (CollectionPrototype[METHOD_NAME] !== ArrayIteratorMethods[METHOD_NAME])
      try {
-      hide(CollectionPrototype, METHOD_NAME, ArrayIteratorMethods[METHOD_NAME]);
+      createNonEnumerableProperty(CollectionPrototype, METHOD_NAME, ArrayIteratorMethods[METHOD_NAME]);
      } catch (error) {
       CollectionPrototype[METHOD_NAME] = ArrayIteratorMethods[METHOD_NAME];
      }
@@ -3664,7 +3781,7 @@ for (var COLLECTION_NAME in DOMIterables) {
 }
 
 /***/ }),
-/* 115 */
+/* 119 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -3702,16 +3819,16 @@ module.exports = {
 };
 
 /***/ }),
-/* 116 */
+/* 120 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var toIndexedObject = __w_pdfjs_require__(14);
-var addToUnscopables = __w_pdfjs_require__(63);
-var Iterators = __w_pdfjs_require__(78);
-var InternalStateModule = __w_pdfjs_require__(31);
-var defineIterator = __w_pdfjs_require__(71);
+var toIndexedObject = __w_pdfjs_require__(12);
+var addToUnscopables = __w_pdfjs_require__(66);
+var Iterators = __w_pdfjs_require__(81);
+var InternalStateModule = __w_pdfjs_require__(28);
+var defineIterator = __w_pdfjs_require__(74);
 var ARRAY_ITERATOR = 'Array Iterator';
 var setInternalState = InternalStateModule.set;
 var getInternalState = InternalStateModule.getterFor(ARRAY_ITERATOR);
@@ -3758,45 +3875,45 @@ addToUnscopables('values');
 addToUnscopables('entries');
 
 /***/ }),
-/* 117 */
+/* 121 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(100);
+__w_pdfjs_require__(104);
+__w_pdfjs_require__(122);
 __w_pdfjs_require__(118);
-__w_pdfjs_require__(114);
-var path = __w_pdfjs_require__(39);
+var path = __w_pdfjs_require__(38);
 module.exports = path.WeakSet;
 
 /***/ }),
-/* 118 */
+/* 122 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var collection = __w_pdfjs_require__(106);
-var collectionWeak = __w_pdfjs_require__(110);
-collection('WeakSet', function (get) {
+var collection = __w_pdfjs_require__(110);
+var collectionWeak = __w_pdfjs_require__(114);
+collection('WeakSet', function (init) {
  return function WeakSet() {
-  return get(this, arguments.length ? arguments[0] : undefined);
+  return init(this, arguments.length ? arguments[0] : undefined);
  };
-}, collectionWeak, false, true);
+}, collectionWeak);
 
 /***/ }),
-/* 119 */
+/* 123 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(120);
-var entryUnbind = __w_pdfjs_require__(54);
+__w_pdfjs_require__(124);
+var entryUnbind = __w_pdfjs_require__(57);
 module.exports = entryUnbind('String', 'codePointAt');
 
 /***/ }),
-/* 120 */
+/* 124 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var codeAt = __w_pdfjs_require__(70).codeAt;
+var $ = __w_pdfjs_require__(5);
+var codeAt = __w_pdfjs_require__(73).codeAt;
 $({
  target: 'String',
  proto: true
@@ -3807,19 +3924,19 @@ $({
 });
 
 /***/ }),
-/* 121 */
+/* 125 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(122);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(126);
+var path = __w_pdfjs_require__(38);
 module.exports = path.String.fromCodePoint;
 
 /***/ }),
-/* 122 */
+/* 126 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var $ = __w_pdfjs_require__(7);
-var toAbsoluteIndex = __w_pdfjs_require__(45);
+var $ = __w_pdfjs_require__(5);
+var toAbsoluteIndex = __w_pdfjs_require__(44);
 var fromCharCode = String.fromCharCode;
 var nativeFromCodePoint = String.fromCodePoint;
 var INCORRECT_LENGTH = !!nativeFromCodePoint && nativeFromCodePoint.length != 1;
@@ -3844,18 +3961,12 @@ $({
 });
 
 /***/ }),
-/* 123 */
+/* 127 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(124);
-__w_pdfjs_require__(100);
-__w_pdfjs_require__(126);
-__w_pdfjs_require__(130);
-__w_pdfjs_require__(131);
+__w_pdfjs_require__(128);
+__w_pdfjs_require__(104);
 __w_pdfjs_require__(132);
-__w_pdfjs_require__(133);
-__w_pdfjs_require__(134);
-__w_pdfjs_require__(135);
 __w_pdfjs_require__(136);
 __w_pdfjs_require__(137);
 __w_pdfjs_require__(138);
@@ -3866,29 +3977,36 @@ __w_pdfjs_require__(142);
 __w_pdfjs_require__(143);
 __w_pdfjs_require__(144);
 __w_pdfjs_require__(145);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(146);
+__w_pdfjs_require__(147);
+__w_pdfjs_require__(148);
+__w_pdfjs_require__(149);
+__w_pdfjs_require__(150);
+__w_pdfjs_require__(151);
+var path = __w_pdfjs_require__(38);
 module.exports = path.Symbol;
 
 /***/ }),
-/* 124 */
+/* 128 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var fails = __w_pdfjs_require__(11);
-var isArray = __w_pdfjs_require__(113);
-var isObject = __w_pdfjs_require__(19);
-var toObject = __w_pdfjs_require__(75);
-var toLength = __w_pdfjs_require__(43);
-var createProperty = __w_pdfjs_require__(85);
-var arraySpeciesCreate = __w_pdfjs_require__(112);
-var arrayMethodHasSpeciesSupport = __w_pdfjs_require__(125);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var $ = __w_pdfjs_require__(5);
+var fails = __w_pdfjs_require__(9);
+var isArray = __w_pdfjs_require__(117);
+var isObject = __w_pdfjs_require__(17);
+var toObject = __w_pdfjs_require__(78);
+var toLength = __w_pdfjs_require__(42);
+var createProperty = __w_pdfjs_require__(88);
+var arraySpeciesCreate = __w_pdfjs_require__(116);
+var arrayMethodHasSpeciesSupport = __w_pdfjs_require__(129);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var V8_VERSION = __w_pdfjs_require__(130);
 var IS_CONCAT_SPREADABLE = wellKnownSymbol('isConcatSpreadable');
 var MAX_SAFE_INTEGER = 0x1FFFFFFFFFFFFF;
 var MAXIMUM_ALLOWED_INDEX_EXCEEDED = 'Maximum allowed index exceeded';
-var IS_CONCAT_SPREADABLE_SUPPORT = !fails(function () {
+var IS_CONCAT_SPREADABLE_SUPPORT = V8_VERSION >= 51 || !fails(function () {
  var array = [];
  array[IS_CONCAT_SPREADABLE] = false;
  return array.concat()[0] !== array;
@@ -3932,14 +4050,15 @@ $({
 });
 
 /***/ }),
-/* 125 */
+/* 129 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var fails = __w_pdfjs_require__(11);
-var wellKnownSymbol = __w_pdfjs_require__(51);
+var fails = __w_pdfjs_require__(9);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var V8_VERSION = __w_pdfjs_require__(130);
 var SPECIES = wellKnownSymbol('species');
 module.exports = function (METHOD_NAME) {
- return !fails(function () {
+ return V8_VERSION >= 51 || !fails(function () {
   var array = [];
   var constructor = array.constructor = {};
   constructor[SPECIES] = function () {
@@ -3950,45 +4069,77 @@ module.exports = function (METHOD_NAME) {
 };
 
 /***/ }),
-/* 126 */
+/* 130 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var global = __w_pdfjs_require__(6);
+var userAgent = __w_pdfjs_require__(131);
+var process = global.process;
+var versions = process && process.versions;
+var v8 = versions && versions.v8;
+var match, version;
+if (v8) {
+ match = v8.split('.');
+ version = match[0] + match[1];
+} else if (userAgent) {
+ match = userAgent.match(/Edge\/(\d+)/);
+ if (!match || match[1] >= 74) {
+  match = userAgent.match(/Chrome\/(\d+)/);
+  if (match)
+   version = match[1];
+ }
+}
+module.exports = version && +version;
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var getBuiltIn = __w_pdfjs_require__(37);
+module.exports = getBuiltIn('navigator', 'userAgent') || '';
+
+/***/ }),
+/* 132 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var global = __w_pdfjs_require__(8);
-var IS_PURE = __w_pdfjs_require__(29);
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var NATIVE_SYMBOL = __w_pdfjs_require__(52);
-var fails = __w_pdfjs_require__(11);
-var has = __w_pdfjs_require__(20);
-var isArray = __w_pdfjs_require__(113);
-var isObject = __w_pdfjs_require__(19);
-var anObject = __w_pdfjs_require__(25);
-var toObject = __w_pdfjs_require__(75);
-var toIndexedObject = __w_pdfjs_require__(14);
-var toPrimitive = __w_pdfjs_require__(18);
-var createPropertyDescriptor = __w_pdfjs_require__(13);
-var nativeObjectCreate = __w_pdfjs_require__(64);
-var objectKeys = __w_pdfjs_require__(66);
-var getOwnPropertyNamesModule = __w_pdfjs_require__(40);
-var getOwnPropertyNamesExternal = __w_pdfjs_require__(127);
-var getOwnPropertySymbolsModule = __w_pdfjs_require__(47);
-var getOwnPropertyDescriptorModule = __w_pdfjs_require__(9);
-var definePropertyModule = __w_pdfjs_require__(24);
-var propertyIsEnumerableModule = __w_pdfjs_require__(12);
-var hide = __w_pdfjs_require__(23);
-var redefine = __w_pdfjs_require__(26);
-var shared = __w_pdfjs_require__(27);
-var sharedKey = __w_pdfjs_require__(33);
-var hiddenKeys = __w_pdfjs_require__(35);
-var uid = __w_pdfjs_require__(34);
-var wellKnownSymbol = __w_pdfjs_require__(51);
-var wrappedWellKnownSymbolModule = __w_pdfjs_require__(128);
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-var setToStringTag = __w_pdfjs_require__(77);
-var InternalStateModule = __w_pdfjs_require__(31);
-var $forEach = __w_pdfjs_require__(111).forEach;
+var $ = __w_pdfjs_require__(5);
+var global = __w_pdfjs_require__(6);
+var getBuiltIn = __w_pdfjs_require__(37);
+var IS_PURE = __w_pdfjs_require__(32);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var NATIVE_SYMBOL = __w_pdfjs_require__(54);
+var USE_SYMBOL_AS_UID = __w_pdfjs_require__(55);
+var fails = __w_pdfjs_require__(9);
+var has = __w_pdfjs_require__(18);
+var isArray = __w_pdfjs_require__(117);
+var isObject = __w_pdfjs_require__(17);
+var anObject = __w_pdfjs_require__(23);
+var toObject = __w_pdfjs_require__(78);
+var toIndexedObject = __w_pdfjs_require__(12);
+var toPrimitive = __w_pdfjs_require__(16);
+var createPropertyDescriptor = __w_pdfjs_require__(11);
+var nativeObjectCreate = __w_pdfjs_require__(67);
+var objectKeys = __w_pdfjs_require__(69);
+var getOwnPropertyNamesModule = __w_pdfjs_require__(39);
+var getOwnPropertyNamesExternal = __w_pdfjs_require__(133);
+var getOwnPropertySymbolsModule = __w_pdfjs_require__(46);
+var getOwnPropertyDescriptorModule = __w_pdfjs_require__(7);
+var definePropertyModule = __w_pdfjs_require__(22);
+var propertyIsEnumerableModule = __w_pdfjs_require__(10);
+var createNonEnumerableProperty = __w_pdfjs_require__(21);
+var redefine = __w_pdfjs_require__(24);
+var shared = __w_pdfjs_require__(31);
+var sharedKey = __w_pdfjs_require__(30);
+var hiddenKeys = __w_pdfjs_require__(34);
+var uid = __w_pdfjs_require__(33);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+var wrappedWellKnownSymbolModule = __w_pdfjs_require__(134);
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+var setToStringTag = __w_pdfjs_require__(80);
+var InternalStateModule = __w_pdfjs_require__(28);
+var $forEach = __w_pdfjs_require__(115).forEach;
 var HIDDEN = sharedKey('hidden');
 var SYMBOL = 'Symbol';
 var PROTOTYPE = 'prototype';
@@ -3997,8 +4148,7 @@ var setInternalState = InternalStateModule.set;
 var getInternalState = InternalStateModule.getterFor(SYMBOL);
 var ObjectPrototype = Object[PROTOTYPE];
 var $Symbol = global.Symbol;
-var JSON = global.JSON;
-var nativeJSONStringify = JSON && JSON.stringify;
+var $stringify = getBuiltIn('JSON', 'stringify');
 var nativeGetOwnPropertyDescriptor = getOwnPropertyDescriptorModule.f;
 var nativeDefineProperty = definePropertyModule.f;
 var nativeGetOwnPropertyNames = getOwnPropertyNamesExternal.f;
@@ -4036,7 +4186,7 @@ var wrap = function (tag, description) {
   symbol.description = description;
  return symbol;
 };
-var isSymbol = NATIVE_SYMBOL && typeof $Symbol.iterator == 'symbol' ? function (it) {
+var isSymbol = USE_SYMBOL_AS_UID ? function (it) {
  return typeof it == 'symbol';
 } : function (it) {
  return Object(it) instanceof $Symbol;
@@ -4135,11 +4285,17 @@ if (!NATIVE_SYMBOL) {
  redefine($Symbol[PROTOTYPE], 'toString', function toString() {
   return getInternalState(this).tag;
  });
+ redefine($Symbol, 'withoutSetter', function (description) {
+  return wrap(uid(description), description);
+ });
  propertyIsEnumerableModule.f = $propertyIsEnumerable;
  definePropertyModule.f = $defineProperty;
  getOwnPropertyDescriptorModule.f = $getOwnPropertyDescriptor;
  getOwnPropertyNamesModule.f = getOwnPropertyNamesExternal.f = $getOwnPropertyNames;
  getOwnPropertySymbolsModule.f = $getOwnPropertySymbols;
+ wrappedWellKnownSymbolModule.f = function (name) {
+  return wrap(wellKnownSymbol(name), name);
+ };
  if (DESCRIPTORS) {
   nativeDefineProperty($Symbol[PROTOTYPE], 'description', {
    configurable: true,
@@ -4151,9 +4307,6 @@ if (!NATIVE_SYMBOL) {
    redefine(ObjectPrototype, 'propertyIsEnumerable', $propertyIsEnumerable, { unsafe: true });
   }
  }
- wrappedWellKnownSymbolModule.f = function (name) {
-  return wrap(wellKnownSymbol(name), name);
- };
 }
 $({
  global: true,
@@ -4221,45 +4374,49 @@ $({
   return getOwnPropertySymbolsModule.f(toObject(it));
  }
 });
-JSON && $({
- target: 'JSON',
- stat: true,
- forced: !NATIVE_SYMBOL || fails(function () {
+if ($stringify) {
+ var FORCED_JSON_STRINGIFY = !NATIVE_SYMBOL || fails(function () {
   var symbol = $Symbol();
-  return nativeJSONStringify([symbol]) != '[null]' || nativeJSONStringify({ a: symbol }) != '{}' || nativeJSONStringify(Object(symbol)) != '{}';
- })
-}, {
- stringify: function stringify(it) {
-  var args = [it];
-  var index = 1;
-  var replacer, $replacer;
-  while (arguments.length > index)
-   args.push(arguments[index++]);
-  $replacer = replacer = args[1];
-  if (!isObject(replacer) && it === undefined || isSymbol(it))
-   return;
-  if (!isArray(replacer))
-   replacer = function (key, value) {
-    if (typeof $replacer == 'function')
-     value = $replacer.call(this, key, value);
-    if (!isSymbol(value))
-     return value;
-   };
-  args[1] = replacer;
-  return nativeJSONStringify.apply(JSON, args);
- }
-});
-if (!$Symbol[PROTOTYPE][TO_PRIMITIVE])
- hide($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+  return $stringify([symbol]) != '[null]' || $stringify({ a: symbol }) != '{}' || $stringify(Object(symbol)) != '{}';
+ });
+ $({
+  target: 'JSON',
+  stat: true,
+  forced: FORCED_JSON_STRINGIFY
+ }, {
+  stringify: function stringify(it, replacer, space) {
+   var args = [it];
+   var index = 1;
+   var $replacer;
+   while (arguments.length > index)
+    args.push(arguments[index++]);
+   $replacer = replacer;
+   if (!isObject(replacer) && it === undefined || isSymbol(it))
+    return;
+   if (!isArray(replacer))
+    replacer = function (key, value) {
+     if (typeof $replacer == 'function')
+      value = $replacer.call(this, key, value);
+     if (!isSymbol(value))
+      return value;
+    };
+   args[1] = replacer;
+   return $stringify.apply(null, args);
+  }
+ });
+}
+if (!$Symbol[PROTOTYPE][TO_PRIMITIVE]) {
+ createNonEnumerableProperty($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+}
 setToStringTag($Symbol, SYMBOL);
 hiddenKeys[HIDDEN] = true;
 
 /***/ }),
-/* 127 */
+/* 133 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var toIndexedObject = __w_pdfjs_require__(14);
-var nativeGetOwnPropertyNames = __w_pdfjs_require__(40).f;
+var toIndexedObject = __w_pdfjs_require__(12);
+var nativeGetOwnPropertyNames = __w_pdfjs_require__(39).f;
 var toString = {}.toString;
 var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames ? Object.getOwnPropertyNames(window) : [];
 var getWindowNames = function (it) {
@@ -4274,19 +4431,20 @@ module.exports.f = function getOwnPropertyNames(it) {
 };
 
 /***/ }),
-/* 128 */
+/* 134 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-exports.f = __w_pdfjs_require__(51);
+var wellKnownSymbol = __w_pdfjs_require__(53);
+exports.f = wellKnownSymbol;
 
 /***/ }),
-/* 129 */
+/* 135 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var path = __w_pdfjs_require__(39);
-var has = __w_pdfjs_require__(20);
-var wrappedWellKnownSymbolModule = __w_pdfjs_require__(128);
-var defineProperty = __w_pdfjs_require__(24).f;
+var path = __w_pdfjs_require__(38);
+var has = __w_pdfjs_require__(18);
+var wrappedWellKnownSymbolModule = __w_pdfjs_require__(134);
+var defineProperty = __w_pdfjs_require__(22).f;
 module.exports = function (NAME) {
  var Symbol = path.Symbol || (path.Symbol = {});
  if (!has(Symbol, NAME))
@@ -4294,25 +4452,25 @@ module.exports = function (NAME) {
 };
 
 /***/ }),
-/* 130 */
+/* 136 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
 defineWellKnownSymbol('asyncIterator');
 
 /***/ }),
-/* 131 */
+/* 137 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var global = __w_pdfjs_require__(8);
-var has = __w_pdfjs_require__(20);
-var isObject = __w_pdfjs_require__(19);
-var defineProperty = __w_pdfjs_require__(24).f;
-var copyConstructorProperties = __w_pdfjs_require__(36);
+var $ = __w_pdfjs_require__(5);
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var global = __w_pdfjs_require__(6);
+var has = __w_pdfjs_require__(18);
+var isObject = __w_pdfjs_require__(17);
+var defineProperty = __w_pdfjs_require__(22).f;
+var copyConstructorProperties = __w_pdfjs_require__(35);
 var NativeSymbol = global.Symbol;
 if (DESCRIPTORS && typeof NativeSymbol == 'function' && (!('description' in NativeSymbol.prototype) || NativeSymbol().description !== undefined)) {
  var EmptyStringDescriptionStore = {};
@@ -4347,121 +4505,121 @@ if (DESCRIPTORS && typeof NativeSymbol == 'function' && (!('description' in Nati
 }
 
 /***/ }),
-/* 132 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('hasInstance');
-
-/***/ }),
-/* 133 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('isConcatSpreadable');
-
-/***/ }),
-/* 134 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('iterator');
-
-/***/ }),
-/* 135 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('match');
-
-/***/ }),
-/* 136 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('matchAll');
-
-/***/ }),
-/* 137 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('replace');
-
-/***/ }),
 /* 138 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('search');
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('hasInstance');
 
 /***/ }),
 /* 139 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('species');
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('isConcatSpreadable');
 
 /***/ }),
 /* 140 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('split');
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('iterator');
 
 /***/ }),
 /* 141 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('toPrimitive');
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('match');
 
 /***/ }),
 /* 142 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('toStringTag');
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('matchAll');
 
 /***/ }),
 /* 143 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var defineWellKnownSymbol = __w_pdfjs_require__(129);
-defineWellKnownSymbol('unscopables');
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('replace');
 
 /***/ }),
 /* 144 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var setToStringTag = __w_pdfjs_require__(77);
-setToStringTag(Math, 'Math', true);
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('search');
 
 /***/ }),
 /* 145 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var global = __w_pdfjs_require__(8);
-var setToStringTag = __w_pdfjs_require__(77);
-setToStringTag(global.JSON, 'JSON', true);
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('species');
 
 /***/ }),
 /* 146 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(147);
-var entryUnbind = __w_pdfjs_require__(54);
-module.exports = entryUnbind('String', 'padStart');
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('split');
 
 /***/ }),
 /* 147 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('toPrimitive');
+
+/***/ }),
+/* 148 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('toStringTag');
+
+/***/ }),
+/* 149 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var defineWellKnownSymbol = __w_pdfjs_require__(135);
+defineWellKnownSymbol('unscopables');
+
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var setToStringTag = __w_pdfjs_require__(80);
+setToStringTag(Math, 'Math', true);
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+var global = __w_pdfjs_require__(6);
+var setToStringTag = __w_pdfjs_require__(80);
+setToStringTag(global.JSON, 'JSON', true);
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
+__w_pdfjs_require__(153);
+var entryUnbind = __w_pdfjs_require__(57);
+module.exports = entryUnbind('String', 'padStart');
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __w_pdfjs_require__) {
+
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var $padStart = __w_pdfjs_require__(148).start;
-var WEBKIT_BUG = __w_pdfjs_require__(150);
+var $ = __w_pdfjs_require__(5);
+var $padStart = __w_pdfjs_require__(154).start;
+var WEBKIT_BUG = __w_pdfjs_require__(156);
 $({
  target: 'String',
  proto: true,
@@ -4473,12 +4631,12 @@ $({
 });
 
 /***/ }),
-/* 148 */
+/* 154 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var toLength = __w_pdfjs_require__(43);
-var repeat = __w_pdfjs_require__(149);
-var requireObjectCoercible = __w_pdfjs_require__(17);
+var toLength = __w_pdfjs_require__(42);
+var repeat = __w_pdfjs_require__(155);
+var requireObjectCoercible = __w_pdfjs_require__(15);
 var ceil = Math.ceil;
 var createMethod = function (IS_END) {
  return function ($this, maxLength, fillString) {
@@ -4502,13 +4660,13 @@ module.exports = {
 };
 
 /***/ }),
-/* 149 */
+/* 155 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var toInteger = __w_pdfjs_require__(44);
-var requireObjectCoercible = __w_pdfjs_require__(17);
+var toInteger = __w_pdfjs_require__(43);
+var requireObjectCoercible = __w_pdfjs_require__(15);
 module.exports = ''.repeat || function repeat(count) {
  var str = String(requireObjectCoercible(this));
  var result = '';
@@ -4522,36 +4680,29 @@ module.exports = ''.repeat || function repeat(count) {
 };
 
 /***/ }),
-/* 150 */
+/* 156 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var userAgent = __w_pdfjs_require__(151);
+var userAgent = __w_pdfjs_require__(131);
 module.exports = /Version\/10\.\d+(\.\d+)?( Mobile\/\w+)? Safari\//.test(userAgent);
 
 /***/ }),
-/* 151 */
+/* 157 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var getBuiltIn = __w_pdfjs_require__(38);
-module.exports = getBuiltIn('navigator', 'userAgent') || '';
-
-/***/ }),
-/* 152 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-__w_pdfjs_require__(153);
-var entryUnbind = __w_pdfjs_require__(54);
+__w_pdfjs_require__(158);
+var entryUnbind = __w_pdfjs_require__(57);
 module.exports = entryUnbind('String', 'padEnd');
 
 /***/ }),
-/* 153 */
+/* 158 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
 
-var $ = __w_pdfjs_require__(7);
-var $padEnd = __w_pdfjs_require__(148).end;
-var WEBKIT_BUG = __w_pdfjs_require__(150);
+var $ = __w_pdfjs_require__(5);
+var $padEnd = __w_pdfjs_require__(154).end;
+var WEBKIT_BUG = __w_pdfjs_require__(156);
 $({
  target: 'String',
  proto: true,
@@ -4563,19 +4714,19 @@ $({
 });
 
 /***/ }),
-/* 154 */
+/* 159 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-__w_pdfjs_require__(155);
-var path = __w_pdfjs_require__(39);
+__w_pdfjs_require__(160);
+var path = __w_pdfjs_require__(38);
 module.exports = path.Object.values;
 
 /***/ }),
-/* 155 */
+/* 160 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var $ = __w_pdfjs_require__(7);
-var $values = __w_pdfjs_require__(156).values;
+var $ = __w_pdfjs_require__(5);
+var $values = __w_pdfjs_require__(161).values;
 $({
  target: 'Object',
  stat: true
@@ -4586,13 +4737,13 @@ $({
 });
 
 /***/ }),
-/* 156 */
+/* 161 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
-var DESCRIPTORS = __w_pdfjs_require__(10);
-var objectKeys = __w_pdfjs_require__(66);
-var toIndexedObject = __w_pdfjs_require__(14);
-var propertyIsEnumerable = __w_pdfjs_require__(12).f;
+var DESCRIPTORS = __w_pdfjs_require__(8);
+var objectKeys = __w_pdfjs_require__(69);
+var toIndexedObject = __w_pdfjs_require__(12);
+var propertyIsEnumerable = __w_pdfjs_require__(10).f;
 var createMethod = function (TO_ENTRIES) {
  return function (it) {
   var O = toIndexedObject(it);
@@ -4619,43 +4770,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 157 */
-/***/ (function(module, exports, __w_pdfjs_require__) {
-
-"use strict";
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-{
-  var isReadableStreamSupported = false;
-
-  if (typeof ReadableStream !== 'undefined') {
-    try {
-      new ReadableStream({
-        start: function start(controller) {
-          controller.close();
-        }
-      });
-      isReadableStreamSupported = true;
-    } catch (e) {}
-  }
-
-  if (isReadableStreamSupported) {
-    exports.ReadableStream = ReadableStream;
-  } else {
-    var DummyReadableStream = function DummyReadableStream() {
-      _classCallCheck(this, DummyReadableStream);
-
-      throw new Error('The current image decoders are synchronous, ' + 'hence `ReadableStream` shouldn\'t need to be ' + 'polyfilled for the IMAGE_DECODERS build target.');
-    };
-
-    exports.ReadableStream = DummyReadableStream;
-  }
-}
-
-/***/ }),
-/* 158 */
+/* 162 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
@@ -4668,9 +4783,9 @@ exports.Jbig2Image = void 0;
 
 var _util = __w_pdfjs_require__(1);
 
-var _arithmetic_decoder = __w_pdfjs_require__(159);
+var _arithmetic_decoder = __w_pdfjs_require__(163);
 
-var _ccitt = __w_pdfjs_require__(160);
+var _ccitt = __w_pdfjs_require__(164);
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -4722,12 +4837,12 @@ var Jbig2Image = function Jbig2ImageClosure() {
   DecodingContext.prototype = {
     get decoder() {
       var decoder = new _arithmetic_decoder.ArithmeticDecoder(this.data, this.start, this.end);
-      return (0, _util.shadow)(this, 'decoder', decoder);
+      return (0, _util.shadow)(this, "decoder", decoder);
     },
 
     get contextCache() {
       var cache = new ContextCache();
-      return (0, _util.shadow)(this, 'contextCache', cache);
+      return (0, _util.shadow)(this, "contextCache", cache);
     }
 
   };
@@ -4754,7 +4869,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
   }
 
   function decodeIAID(contextCache, decoder, codeLength) {
-    var contexts = contextCache.getContexts('IAID');
+    var contexts = contextCache.getContexts("IAID");
     var prev = 1;
 
     for (var i = 0; i < codeLength; i++) {
@@ -4766,10 +4881,10 @@ var Jbig2Image = function Jbig2ImageClosure() {
       return prev & (1 << codeLength) - 1;
     }
 
-    return prev & 0x7FFFFFFF;
+    return prev & 0x7fffffff;
   }
 
-  var SegmentTypes = ['SymbolDictionary', null, null, null, 'IntermediateTextRegion', null, 'ImmediateTextRegion', 'ImmediateLosslessTextRegion', null, null, null, null, null, null, null, null, 'PatternDictionary', null, null, null, 'IntermediateHalftoneRegion', null, 'ImmediateHalftoneRegion', 'ImmediateLosslessHalftoneRegion', null, null, null, null, null, null, null, null, null, null, null, null, 'IntermediateGenericRegion', null, 'ImmediateGenericRegion', 'ImmediateLosslessGenericRegion', 'IntermediateGenericRefinementRegion', null, 'ImmediateGenericRefinementRegion', 'ImmediateLosslessGenericRefinementRegion', null, null, null, null, 'PageInformation', 'EndOfPage', 'EndOfStripe', 'EndOfFile', 'Profiles', 'Tables', null, null, null, null, null, null, null, null, 'Extension'];
+  var SegmentTypes = ["SymbolDictionary", null, null, null, "IntermediateTextRegion", null, "ImmediateTextRegion", "ImmediateLosslessTextRegion", null, null, null, null, null, null, null, null, "PatternDictionary", null, null, null, "IntermediateHalftoneRegion", null, "ImmediateHalftoneRegion", "ImmediateLosslessHalftoneRegion", null, null, null, null, null, null, null, null, null, null, null, null, "IntermediateGenericRegion", null, "ImmediateGenericRegion", "ImmediateLosslessGenericRegion", "IntermediateGenericRefinementRegion", null, "ImmediateGenericRefinementRegion", "ImmediateLosslessGenericRefinementRegion", null, null, null, null, "PageInformation", "EndOfPage", "EndOfStripe", "EndOfFile", "Profiles", "Tables", null, null, null, null, null, null, null, null, "Extension"];
   var CodingTemplates = [[{
     x: -1,
     y: -2
@@ -4967,12 +5082,12 @@ var Jbig2Image = function Jbig2ImageClosure() {
       y: 1
     }]
   }];
-  var ReusedContexts = [0x9B25, 0x0795, 0x00E5, 0x0195];
+  var ReusedContexts = [0x9b25, 0x0795, 0x00e5, 0x0195];
   var RefinementReusedContexts = [0x0020, 0x0008];
 
   function decodeBitmapTemplate0(width, height, decodingContext) {
     var decoder = decodingContext.decoder;
-    var contexts = decodingContext.contextCache.getContexts('GB');
+    var contexts = decodingContext.contextCache.getContexts("GB");
     var contextLabel,
         i,
         j,
@@ -4981,7 +5096,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         row1,
         row2,
         bitmap = [];
-    var OLD_PIXEL_MASK = 0x7BF7;
+    var OLD_PIXEL_MASK = 0x7bf7;
 
     for (i = 0; i < height; i++) {
       row = bitmap[i] = new Uint8Array(width);
@@ -5056,7 +5171,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
     var row = new Uint8Array(width);
     var bitmap = [];
     var decoder = decodingContext.decoder;
-    var contexts = decodingContext.contextCache.getContexts('GB');
+    var contexts = decodingContext.contextCache.getContexts("GB");
     var ltp = 0,
         j,
         i0,
@@ -5164,7 +5279,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
     var pseudoPixelContext = RefinementReusedContexts[templateIndex];
     var bitmap = [];
     var decoder = decodingContext.decoder;
-    var contexts = decodingContext.contextCache.getContexts('GR');
+    var contexts = decodingContext.contextCache.getContexts("GR");
     var ltp = 0;
 
     for (var i = 0; i < height; i++) {
@@ -5173,7 +5288,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         ltp ^= sltp;
 
         if (ltp) {
-          throw new Jbig2Error('prediction is not supported');
+          throw new Jbig2Error("prediction is not supported");
         }
       }
 
@@ -5216,7 +5331,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
 
   function decodeSymbolDictionary(huffman, refinement, symbols, numberOfNewSymbols, numberOfExportedSymbols, huffmanTables, templateIndex, at, refinementTemplateIndex, refinementAt, decodingContext, huffmanInput) {
     if (huffman && refinement) {
-      throw new Jbig2Error('symbol refinement with Huffman is not supported');
+      throw new Jbig2Error("symbol refinement with Huffman is not supported");
     }
 
     var newSymbols = [];
@@ -5233,14 +5348,14 @@ var Jbig2Image = function Jbig2ImageClosure() {
     }
 
     while (newSymbols.length < numberOfNewSymbols) {
-      var deltaHeight = huffman ? huffmanTables.tableDeltaHeight.decode(huffmanInput) : decodeInteger(contextCache, 'IADH', decoder);
+      var deltaHeight = huffman ? huffmanTables.tableDeltaHeight.decode(huffmanInput) : decodeInteger(contextCache, "IADH", decoder);
       currentHeight += deltaHeight;
       var currentWidth = 0,
           totalWidth = 0;
       var firstSymbol = huffman ? symbolWidths.length : 0;
 
       while (true) {
-        var deltaWidth = huffman ? huffmanTables.tableDeltaWidth.decode(huffmanInput) : decodeInteger(contextCache, 'IADW', decoder);
+        var deltaWidth = huffman ? huffmanTables.tableDeltaWidth.decode(huffmanInput) : decodeInteger(contextCache, "IADW", decoder);
 
         if (deltaWidth === null) {
           break;
@@ -5251,14 +5366,14 @@ var Jbig2Image = function Jbig2ImageClosure() {
         var bitmap;
 
         if (refinement) {
-          var numberOfInstances = decodeInteger(contextCache, 'IAAI', decoder);
+          var numberOfInstances = decodeInteger(contextCache, "IAAI", decoder);
 
           if (numberOfInstances > 1) {
             bitmap = decodeTextRegion(huffman, refinement, currentWidth, currentHeight, 0, numberOfInstances, 1, symbols.concat(newSymbols), symbolCodeLength, 0, 0, 1, 0, huffmanTables, refinementTemplateIndex, refinementAt, decodingContext, 0, huffmanInput);
           } else {
             var symbolId = decodeIAID(contextCache, decoder, symbolCodeLength);
-            var rdx = decodeInteger(contextCache, 'IARDX', decoder);
-            var rdy = decodeInteger(contextCache, 'IARDY', decoder);
+            var rdx = decodeInteger(contextCache, "IARDX", decoder);
+            var rdy = decodeInteger(contextCache, "IARDY", decoder);
             var symbol = symbolId < symbols.length ? symbols[symbolId] : newSymbols[symbolId - symbols.length];
             bitmap = decodeRefinement(currentWidth, currentHeight, refinementTemplateIndex, symbol, rdx, rdy, false, refinementAt, decodingContext);
           }
@@ -5322,7 +5437,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
     var totalSymbolsLength = symbols.length + numberOfNewSymbols;
 
     while (flags.length < totalSymbolsLength) {
-      var runLength = huffman ? tableB1.decode(huffmanInput) : decodeInteger(contextCache, 'IAEX', decoder);
+      var runLength = huffman ? tableB1.decode(huffmanInput) : decodeInteger(contextCache, "IAEX", decoder);
 
       while (runLength--) {
         flags.push(currentFlag);
@@ -5348,7 +5463,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
 
   function decodeTextRegion(huffman, refinement, width, height, defaultPixelValue, numberOfSymbolInstances, stripSize, inputSymbols, symbolCodeLength, transposed, dsOffset, referenceCorner, combinationOperator, huffmanTables, refinementTemplateIndex, refinementAt, decodingContext, logStripSize, huffmanInput) {
     if (huffman && refinement) {
-      throw new Jbig2Error('refinement with Huffman is not supported');
+      throw new Jbig2Error("refinement with Huffman is not supported");
     }
 
     var bitmap = [];
@@ -5368,14 +5483,14 @@ var Jbig2Image = function Jbig2ImageClosure() {
 
     var decoder = decodingContext.decoder;
     var contextCache = decodingContext.contextCache;
-    var stripT = huffman ? -huffmanTables.tableDeltaT.decode(huffmanInput) : -decodeInteger(contextCache, 'IADT', decoder);
+    var stripT = huffman ? -huffmanTables.tableDeltaT.decode(huffmanInput) : -decodeInteger(contextCache, "IADT", decoder);
     var firstS = 0;
     i = 0;
 
     while (i < numberOfSymbolInstances) {
-      var deltaT = huffman ? huffmanTables.tableDeltaT.decode(huffmanInput) : decodeInteger(contextCache, 'IADT', decoder);
+      var deltaT = huffman ? huffmanTables.tableDeltaT.decode(huffmanInput) : decodeInteger(contextCache, "IADT", decoder);
       stripT += deltaT;
-      var deltaFirstS = huffman ? huffmanTables.tableFirstS.decode(huffmanInput) : decodeInteger(contextCache, 'IAFS', decoder);
+      var deltaFirstS = huffman ? huffmanTables.tableFirstS.decode(huffmanInput) : decodeInteger(contextCache, "IAFS", decoder);
       firstS += deltaFirstS;
       var currentS = firstS;
 
@@ -5383,21 +5498,21 @@ var Jbig2Image = function Jbig2ImageClosure() {
         var currentT = 0;
 
         if (stripSize > 1) {
-          currentT = huffman ? huffmanInput.readBits(logStripSize) : decodeInteger(contextCache, 'IAIT', decoder);
+          currentT = huffman ? huffmanInput.readBits(logStripSize) : decodeInteger(contextCache, "IAIT", decoder);
         }
 
         var t = stripSize * stripT + currentT;
         var symbolId = huffman ? huffmanTables.symbolIDTable.decode(huffmanInput) : decodeIAID(contextCache, decoder, symbolCodeLength);
-        var applyRefinement = refinement && (huffman ? huffmanInput.readBit() : decodeInteger(contextCache, 'IARI', decoder));
+        var applyRefinement = refinement && (huffman ? huffmanInput.readBit() : decodeInteger(contextCache, "IARI", decoder));
         var symbolBitmap = inputSymbols[symbolId];
         var symbolWidth = symbolBitmap[0].length;
         var symbolHeight = symbolBitmap.length;
 
         if (applyRefinement) {
-          var rdw = decodeInteger(contextCache, 'IARDW', decoder);
-          var rdh = decodeInteger(contextCache, 'IARDH', decoder);
-          var rdx = decodeInteger(contextCache, 'IARDX', decoder);
-          var rdy = decodeInteger(contextCache, 'IARDY', decoder);
+          var rdw = decodeInteger(contextCache, "IARDW", decoder);
+          var rdh = decodeInteger(contextCache, "IARDH", decoder);
+          var rdx = decodeInteger(contextCache, "IARDX", decoder);
+          var rdy = decodeInteger(contextCache, "IARDY", decoder);
           symbolWidth += rdw;
           symbolHeight += rdh;
           symbolBitmap = decodeRefinement(symbolWidth, symbolHeight, refinementTemplateIndex, symbolBitmap, (rdw >> 1) + rdx, (rdh >> 1) + rdy, false, refinementAt, decodingContext);
@@ -5473,7 +5588,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         }
 
         i++;
-        var deltaS = huffman ? huffmanTables.tableDeltaS.decode(huffmanInput) : decodeInteger(contextCache, 'IADS', decoder);
+        var deltaS = huffman ? huffmanTables.tableDeltaS.decode(huffmanInput) : decodeInteger(contextCache, "IADS", decoder);
 
         if (deltaS === null) {
           break;
@@ -5540,11 +5655,11 @@ var Jbig2Image = function Jbig2ImageClosure() {
     var skip = null;
 
     if (enableSkip) {
-      throw new Jbig2Error('skip is not supported');
+      throw new Jbig2Error("skip is not supported");
     }
 
     if (combinationOperator !== 0) {
-      throw new Jbig2Error('operator ' + combinationOperator + ' is not supported in halftone region');
+      throw new Jbig2Error("operator " + combinationOperator + " is not supported in halftone region");
     }
 
     var regionBitmap = [];
@@ -5667,10 +5782,10 @@ var Jbig2Image = function Jbig2ImageClosure() {
     var segmentHeader = {};
     segmentHeader.number = (0, _util.readUint32)(data, start);
     var flags = data[start + 4];
-    var segmentType = flags & 0x3F;
+    var segmentType = flags & 0x3f;
 
     if (!SegmentTypes[segmentType]) {
-      throw new Jbig2Error('invalid segment type: ' + segmentType);
+      throw new Jbig2Error("invalid segment type: " + segmentType);
     }
 
     segmentHeader.type = segmentType;
@@ -5683,7 +5798,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
     var position = start + 6;
 
     if (referredFlags === 7) {
-      referredToCount = (0, _util.readUint32)(data, position - 1) & 0x1FFFFFFF;
+      referredToCount = (0, _util.readUint32)(data, position - 1) & 0x1fffffff;
       position += 3;
       var bytes = referredToCount + 7 >> 3;
       retainBits[0] = data[position++];
@@ -5692,7 +5807,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         retainBits.push(data[position++]);
       }
     } else if (referredFlags === 5 || referredFlags === 6) {
-      throw new Jbig2Error('invalid referred-to flags');
+      throw new Jbig2Error("invalid referred-to flags");
     }
 
     segmentHeader.retainBits = retainBits;
@@ -5718,7 +5833,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
     segmentHeader.length = (0, _util.readUint32)(data, position);
     position += 4;
 
-    if (segmentHeader.length === 0xFFFFFFFF) {
+    if (segmentHeader.length === 0xffffffff) {
       if (segmentType === 38) {
         var genericRegionInfo = readRegionSegmentInformation(data, position);
         var genericRegionSegmentFlags = data[position + RegionSegmentInformationFieldLength];
@@ -5727,14 +5842,14 @@ var Jbig2Image = function Jbig2ImageClosure() {
         var searchPattern = new Uint8Array(searchPatternLength);
 
         if (!genericRegionMmr) {
-          searchPattern[0] = 0xFF;
-          searchPattern[1] = 0xAC;
+          searchPattern[0] = 0xff;
+          searchPattern[1] = 0xac;
         }
 
-        searchPattern[2] = genericRegionInfo.height >>> 24 & 0xFF;
-        searchPattern[3] = genericRegionInfo.height >> 16 & 0xFF;
-        searchPattern[4] = genericRegionInfo.height >> 8 & 0xFF;
-        searchPattern[5] = genericRegionInfo.height & 0xFF;
+        searchPattern[2] = genericRegionInfo.height >>> 24 & 0xff;
+        searchPattern[3] = genericRegionInfo.height >> 16 & 0xff;
+        searchPattern[4] = genericRegionInfo.height >> 8 & 0xff;
+        searchPattern[5] = genericRegionInfo.height & 0xff;
 
         for (i = position, ii = data.length; i < ii; i++) {
           var j = 0;
@@ -5749,11 +5864,11 @@ var Jbig2Image = function Jbig2ImageClosure() {
           }
         }
 
-        if (segmentHeader.length === 0xFFFFFFFF) {
-          throw new Jbig2Error('segment end was not found');
+        if (segmentHeader.length === 0xffffffff) {
+          throw new Jbig2Error("segment end was not found");
         }
       } else {
-        throw new Jbig2Error('invalid unknown segment length');
+        throw new Jbig2Error("invalid unknown segment length");
       }
     }
 
@@ -5945,9 +6060,9 @@ var Jbig2Image = function Jbig2ImageClosure() {
         position += 4;
         halftoneRegion.gridHeight = (0, _util.readUint32)(data, position);
         position += 4;
-        halftoneRegion.gridOffsetX = (0, _util.readUint32)(data, position) & 0xFFFFFFFF;
+        halftoneRegion.gridOffsetX = (0, _util.readUint32)(data, position) & 0xffffffff;
         position += 4;
-        halftoneRegion.gridOffsetY = (0, _util.readUint32)(data, position) & 0xFFFFFFFF;
+        halftoneRegion.gridOffsetY = (0, _util.readUint32)(data, position) & 0xffffffff;
         position += 4;
         halftoneRegion.gridVectorX = (0, _util.readUint16)(data, position);
         position += 2;
@@ -5992,7 +6107,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
           resolutionY: (0, _util.readUint32)(data, position + 12)
         };
 
-        if (pageInfo.height === 0xFFFFFFFF) {
+        if (pageInfo.height === 0xffffffff) {
           delete pageInfo.height;
         }
 
@@ -6024,10 +6139,10 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       default:
-        throw new Jbig2Error("segment type ".concat(header.typeName, "(").concat(header.type, ")") + ' is not implemented');
+        throw new Jbig2Error("segment type ".concat(header.typeName, "(").concat(header.type, ")") + " is not implemented");
     }
 
-    var callbackName = 'on' + header.typeName;
+    var callbackName = "on" + header.typeName;
 
     if (callbackName in visitor) {
       visitor[callbackName].apply(visitor, args);
@@ -6056,8 +6171,8 @@ var Jbig2Image = function Jbig2ImageClosure() {
     var position = 0,
         end = data.length;
 
-    if (data[position] !== 0x97 || data[position + 1] !== 0x4A || data[position + 2] !== 0x42 || data[position + 3] !== 0x32 || data[position + 4] !== 0x0D || data[position + 5] !== 0x0A || data[position + 6] !== 0x1A || data[position + 7] !== 0x0A) {
-      throw new Jbig2Error('parseJbig2 - invalid header.');
+    if (data[position] !== 0x97 || data[position + 1] !== 0x4a || data[position + 2] !== 0x42 || data[position + 3] !== 0x32 || data[position + 4] !== 0x0d || data[position + 5] !== 0x0a || data[position + 6] !== 0x1a || data[position + 7] !== 0x0a) {
+      throw new Jbig2Error("parseJbig2 - invalid header.");
     }
 
     var header = Object.create(null);
@@ -6113,7 +6228,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
 
       if (info.defaultPixelValue) {
         for (var i = 0, ii = buffer.length; i < ii; i++) {
-          buffer[i] = 0xFF;
+          buffer[i] = 0xff;
         }
       }
 
@@ -6290,7 +6405,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
       this.prefixLength = lineData[1];
       this.rangeLength = lineData[2];
       this.prefixCode = lineData[3];
-      this.isLowerRange = lineData[4] === 'lower';
+      this.isLowerRange = lineData[4] === "lower";
     }
   }
 
@@ -6337,7 +6452,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
       var node = this.children[reader.readBit()];
 
       if (!node) {
-        throw new Jbig2Error('invalid Huffman data');
+        throw new Jbig2Error("invalid Huffman data");
       }
 
       return node.decodeNode(reader);
@@ -6412,8 +6527,8 @@ var Jbig2Image = function Jbig2ImageClosure() {
 
   function decodeTablesSegment(data, start, end) {
     var flags = data[start];
-    var lowestValue = (0, _util.readUint32)(data, start + 1) & 0xFFFFFFFF;
-    var highestValue = (0, _util.readUint32)(data, start + 5) & 0xFFFFFFFF;
+    var lowestValue = (0, _util.readUint32)(data, start + 1) & 0xffffffff;
+    var highestValue = (0, _util.readUint32)(data, start + 5) & 0xffffffff;
     var reader = new Reader(data, start + 9, end);
     var prefixSizeBits = (flags >> 1 & 7) + 1;
     var rangeSizeBits = (flags >> 4 & 7) + 1;
@@ -6430,7 +6545,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
     } while (currentRangeLow < highestValue);
 
     prefixLength = reader.readBits(prefixSizeBits);
-    lines.push(new HuffmanLine([lowestValue - 1, prefixLength, 32, 0, 'lower']));
+    lines.push(new HuffmanLine([lowestValue - 1, prefixLength, 32, 0, "lower"]));
     prefixLength = reader.readBits(prefixSizeBits);
     lines.push(new HuffmanLine([highestValue, prefixLength, 32, 0]));
 
@@ -6459,51 +6574,51 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       case 2:
-        lines = [[0, 1, 0, 0x0], [1, 2, 0, 0x2], [2, 3, 0, 0x6], [3, 4, 3, 0xE], [11, 5, 6, 0x1E], [75, 6, 32, 0x3E], [6, 0x3F]];
+        lines = [[0, 1, 0, 0x0], [1, 2, 0, 0x2], [2, 3, 0, 0x6], [3, 4, 3, 0xe], [11, 5, 6, 0x1e], [75, 6, 32, 0x3e], [6, 0x3f]];
         break;
 
       case 3:
-        lines = [[-256, 8, 8, 0xFE], [0, 1, 0, 0x0], [1, 2, 0, 0x2], [2, 3, 0, 0x6], [3, 4, 3, 0xE], [11, 5, 6, 0x1E], [-257, 8, 32, 0xFF, 'lower'], [75, 7, 32, 0x7E], [6, 0x3E]];
+        lines = [[-256, 8, 8, 0xfe], [0, 1, 0, 0x0], [1, 2, 0, 0x2], [2, 3, 0, 0x6], [3, 4, 3, 0xe], [11, 5, 6, 0x1e], [-257, 8, 32, 0xff, "lower"], [75, 7, 32, 0x7e], [6, 0x3e]];
         break;
 
       case 4:
-        lines = [[1, 1, 0, 0x0], [2, 2, 0, 0x2], [3, 3, 0, 0x6], [4, 4, 3, 0xE], [12, 5, 6, 0x1E], [76, 5, 32, 0x1F]];
+        lines = [[1, 1, 0, 0x0], [2, 2, 0, 0x2], [3, 3, 0, 0x6], [4, 4, 3, 0xe], [12, 5, 6, 0x1e], [76, 5, 32, 0x1f]];
         break;
 
       case 5:
-        lines = [[-255, 7, 8, 0x7E], [1, 1, 0, 0x0], [2, 2, 0, 0x2], [3, 3, 0, 0x6], [4, 4, 3, 0xE], [12, 5, 6, 0x1E], [-256, 7, 32, 0x7F, 'lower'], [76, 6, 32, 0x3E]];
+        lines = [[-255, 7, 8, 0x7e], [1, 1, 0, 0x0], [2, 2, 0, 0x2], [3, 3, 0, 0x6], [4, 4, 3, 0xe], [12, 5, 6, 0x1e], [-256, 7, 32, 0x7f, "lower"], [76, 6, 32, 0x3e]];
         break;
 
       case 6:
-        lines = [[-2048, 5, 10, 0x1C], [-1024, 4, 9, 0x8], [-512, 4, 8, 0x9], [-256, 4, 7, 0xA], [-128, 5, 6, 0x1D], [-64, 5, 5, 0x1E], [-32, 4, 5, 0xB], [0, 2, 7, 0x0], [128, 3, 7, 0x2], [256, 3, 8, 0x3], [512, 4, 9, 0xC], [1024, 4, 10, 0xD], [-2049, 6, 32, 0x3E, 'lower'], [2048, 6, 32, 0x3F]];
+        lines = [[-2048, 5, 10, 0x1c], [-1024, 4, 9, 0x8], [-512, 4, 8, 0x9], [-256, 4, 7, 0xa], [-128, 5, 6, 0x1d], [-64, 5, 5, 0x1e], [-32, 4, 5, 0xb], [0, 2, 7, 0x0], [128, 3, 7, 0x2], [256, 3, 8, 0x3], [512, 4, 9, 0xc], [1024, 4, 10, 0xd], [-2049, 6, 32, 0x3e, "lower"], [2048, 6, 32, 0x3f]];
         break;
 
       case 7:
-        lines = [[-1024, 4, 9, 0x8], [-512, 3, 8, 0x0], [-256, 4, 7, 0x9], [-128, 5, 6, 0x1A], [-64, 5, 5, 0x1B], [-32, 4, 5, 0xA], [0, 4, 5, 0xB], [32, 5, 5, 0x1C], [64, 5, 6, 0x1D], [128, 4, 7, 0xC], [256, 3, 8, 0x1], [512, 3, 9, 0x2], [1024, 3, 10, 0x3], [-1025, 5, 32, 0x1E, 'lower'], [2048, 5, 32, 0x1F]];
+        lines = [[-1024, 4, 9, 0x8], [-512, 3, 8, 0x0], [-256, 4, 7, 0x9], [-128, 5, 6, 0x1a], [-64, 5, 5, 0x1b], [-32, 4, 5, 0xa], [0, 4, 5, 0xb], [32, 5, 5, 0x1c], [64, 5, 6, 0x1d], [128, 4, 7, 0xc], [256, 3, 8, 0x1], [512, 3, 9, 0x2], [1024, 3, 10, 0x3], [-1025, 5, 32, 0x1e, "lower"], [2048, 5, 32, 0x1f]];
         break;
 
       case 8:
-        lines = [[-15, 8, 3, 0xFC], [-7, 9, 1, 0x1FC], [-5, 8, 1, 0xFD], [-3, 9, 0, 0x1FD], [-2, 7, 0, 0x7C], [-1, 4, 0, 0xA], [0, 2, 1, 0x0], [2, 5, 0, 0x1A], [3, 6, 0, 0x3A], [4, 3, 4, 0x4], [20, 6, 1, 0x3B], [22, 4, 4, 0xB], [38, 4, 5, 0xC], [70, 5, 6, 0x1B], [134, 5, 7, 0x1C], [262, 6, 7, 0x3C], [390, 7, 8, 0x7D], [646, 6, 10, 0x3D], [-16, 9, 32, 0x1FE, 'lower'], [1670, 9, 32, 0x1FF], [2, 0x1]];
+        lines = [[-15, 8, 3, 0xfc], [-7, 9, 1, 0x1fc], [-5, 8, 1, 0xfd], [-3, 9, 0, 0x1fd], [-2, 7, 0, 0x7c], [-1, 4, 0, 0xa], [0, 2, 1, 0x0], [2, 5, 0, 0x1a], [3, 6, 0, 0x3a], [4, 3, 4, 0x4], [20, 6, 1, 0x3b], [22, 4, 4, 0xb], [38, 4, 5, 0xc], [70, 5, 6, 0x1b], [134, 5, 7, 0x1c], [262, 6, 7, 0x3c], [390, 7, 8, 0x7d], [646, 6, 10, 0x3d], [-16, 9, 32, 0x1fe, "lower"], [1670, 9, 32, 0x1ff], [2, 0x1]];
         break;
 
       case 9:
-        lines = [[-31, 8, 4, 0xFC], [-15, 9, 2, 0x1FC], [-11, 8, 2, 0xFD], [-7, 9, 1, 0x1FD], [-5, 7, 1, 0x7C], [-3, 4, 1, 0xA], [-1, 3, 1, 0x2], [1, 3, 1, 0x3], [3, 5, 1, 0x1A], [5, 6, 1, 0x3A], [7, 3, 5, 0x4], [39, 6, 2, 0x3B], [43, 4, 5, 0xB], [75, 4, 6, 0xC], [139, 5, 7, 0x1B], [267, 5, 8, 0x1C], [523, 6, 8, 0x3C], [779, 7, 9, 0x7D], [1291, 6, 11, 0x3D], [-32, 9, 32, 0x1FE, 'lower'], [3339, 9, 32, 0x1FF], [2, 0x0]];
+        lines = [[-31, 8, 4, 0xfc], [-15, 9, 2, 0x1fc], [-11, 8, 2, 0xfd], [-7, 9, 1, 0x1fd], [-5, 7, 1, 0x7c], [-3, 4, 1, 0xa], [-1, 3, 1, 0x2], [1, 3, 1, 0x3], [3, 5, 1, 0x1a], [5, 6, 1, 0x3a], [7, 3, 5, 0x4], [39, 6, 2, 0x3b], [43, 4, 5, 0xb], [75, 4, 6, 0xc], [139, 5, 7, 0x1b], [267, 5, 8, 0x1c], [523, 6, 8, 0x3c], [779, 7, 9, 0x7d], [1291, 6, 11, 0x3d], [-32, 9, 32, 0x1fe, "lower"], [3339, 9, 32, 0x1ff], [2, 0x0]];
         break;
 
       case 10:
-        lines = [[-21, 7, 4, 0x7A], [-5, 8, 0, 0xFC], [-4, 7, 0, 0x7B], [-3, 5, 0, 0x18], [-2, 2, 2, 0x0], [2, 5, 0, 0x19], [3, 6, 0, 0x36], [4, 7, 0, 0x7C], [5, 8, 0, 0xFD], [6, 2, 6, 0x1], [70, 5, 5, 0x1A], [102, 6, 5, 0x37], [134, 6, 6, 0x38], [198, 6, 7, 0x39], [326, 6, 8, 0x3A], [582, 6, 9, 0x3B], [1094, 6, 10, 0x3C], [2118, 7, 11, 0x7D], [-22, 8, 32, 0xFE, 'lower'], [4166, 8, 32, 0xFF], [2, 0x2]];
+        lines = [[-21, 7, 4, 0x7a], [-5, 8, 0, 0xfc], [-4, 7, 0, 0x7b], [-3, 5, 0, 0x18], [-2, 2, 2, 0x0], [2, 5, 0, 0x19], [3, 6, 0, 0x36], [4, 7, 0, 0x7c], [5, 8, 0, 0xfd], [6, 2, 6, 0x1], [70, 5, 5, 0x1a], [102, 6, 5, 0x37], [134, 6, 6, 0x38], [198, 6, 7, 0x39], [326, 6, 8, 0x3a], [582, 6, 9, 0x3b], [1094, 6, 10, 0x3c], [2118, 7, 11, 0x7d], [-22, 8, 32, 0xfe, "lower"], [4166, 8, 32, 0xff], [2, 0x2]];
         break;
 
       case 11:
-        lines = [[1, 1, 0, 0x0], [2, 2, 1, 0x2], [4, 4, 0, 0xC], [5, 4, 1, 0xD], [7, 5, 1, 0x1C], [9, 5, 2, 0x1D], [13, 6, 2, 0x3C], [17, 7, 2, 0x7A], [21, 7, 3, 0x7B], [29, 7, 4, 0x7C], [45, 7, 5, 0x7D], [77, 7, 6, 0x7E], [141, 7, 32, 0x7F]];
+        lines = [[1, 1, 0, 0x0], [2, 2, 1, 0x2], [4, 4, 0, 0xc], [5, 4, 1, 0xd], [7, 5, 1, 0x1c], [9, 5, 2, 0x1d], [13, 6, 2, 0x3c], [17, 7, 2, 0x7a], [21, 7, 3, 0x7b], [29, 7, 4, 0x7c], [45, 7, 5, 0x7d], [77, 7, 6, 0x7e], [141, 7, 32, 0x7f]];
         break;
 
       case 12:
-        lines = [[1, 1, 0, 0x0], [2, 2, 0, 0x2], [3, 3, 1, 0x6], [5, 5, 0, 0x1C], [6, 5, 1, 0x1D], [8, 6, 1, 0x3C], [10, 7, 0, 0x7A], [11, 7, 1, 0x7B], [13, 7, 2, 0x7C], [17, 7, 3, 0x7D], [25, 7, 4, 0x7E], [41, 8, 5, 0xFE], [73, 8, 32, 0xFF]];
+        lines = [[1, 1, 0, 0x0], [2, 2, 0, 0x2], [3, 3, 1, 0x6], [5, 5, 0, 0x1c], [6, 5, 1, 0x1d], [8, 6, 1, 0x3c], [10, 7, 0, 0x7a], [11, 7, 1, 0x7b], [13, 7, 2, 0x7c], [17, 7, 3, 0x7d], [25, 7, 4, 0x7e], [41, 8, 5, 0xfe], [73, 8, 32, 0xff]];
         break;
 
       case 13:
-        lines = [[1, 1, 0, 0x0], [2, 3, 0, 0x4], [3, 4, 0, 0xC], [4, 5, 0, 0x1C], [5, 4, 1, 0xD], [7, 3, 3, 0x5], [15, 6, 1, 0x3A], [17, 6, 2, 0x3B], [21, 6, 3, 0x3C], [29, 6, 4, 0x3D], [45, 6, 5, 0x3E], [77, 7, 6, 0x7E], [141, 7, 32, 0x7F]];
+        lines = [[1, 1, 0, 0x0], [2, 3, 0, 0x4], [3, 4, 0, 0xc], [4, 5, 0, 0x1c], [5, 4, 1, 0xd], [7, 3, 3, 0x5], [15, 6, 1, 0x3a], [17, 6, 2, 0x3b], [21, 6, 3, 0x3c], [29, 6, 4, 0x3d], [45, 6, 5, 0x3e], [77, 7, 6, 0x7e], [141, 7, 32, 0x7f]];
         break;
 
       case 14:
@@ -6511,7 +6626,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       case 15:
-        lines = [[-24, 7, 4, 0x7C], [-8, 6, 2, 0x3C], [-4, 5, 1, 0x1C], [-2, 4, 0, 0xC], [-1, 3, 0, 0x4], [0, 1, 0, 0x0], [1, 3, 0, 0x5], [2, 4, 0, 0xD], [3, 5, 1, 0x1D], [5, 6, 2, 0x3D], [9, 7, 4, 0x7D], [-25, 7, 32, 0x7E, 'lower'], [25, 7, 32, 0x7F]];
+        lines = [[-24, 7, 4, 0x7c], [-8, 6, 2, 0x3c], [-4, 5, 1, 0x1c], [-2, 4, 0, 0xc], [-1, 3, 0, 0x4], [0, 1, 0, 0x0], [1, 3, 0, 0x5], [2, 4, 0, 0xd], [3, 5, 1, 0x1d], [5, 6, 2, 0x3d], [9, 7, 4, 0x7d], [-25, 7, 32, 0x7e, "lower"], [25, 7, 32, 0x7f]];
         break;
 
       default:
@@ -6543,7 +6658,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
     readBit: function readBit() {
       if (this.shift < 0) {
         if (this.position >= this.end) {
-          throw new Jbig2Error('end of data while reading bit');
+          throw new Jbig2Error("end of data while reading bit");
         }
 
         this.currentByte = this.data[this.position++];
@@ -6594,7 +6709,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
       }
     }
 
-    throw new Jbig2Error('can\'t find custom Huffman table');
+    throw new Jbig2Error("can't find custom Huffman table");
   }
 
   function getTextRegionHuffmanTables(textRegion, referredTo, customTables, numberOfSymbols, reader) {
@@ -6621,7 +6736,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         switch (codeLength) {
           case 32:
             if (i === 0) {
-              throw new Jbig2Error('no previous value in symbol ID table');
+              throw new Jbig2Error("no previous value in symbol ID table");
             }
 
             numberOfRepeats = reader.readBits(2) + 3;
@@ -6639,7 +6754,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
             break;
 
           default:
-            throw new Jbig2Error('invalid code length in symbol ID table');
+            throw new Jbig2Error("invalid code length in symbol ID table");
         }
 
         for (j = 0; j < numberOfRepeats; j++) {
@@ -6671,7 +6786,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       default:
-        throw new Jbig2Error('invalid Huffman FS selector');
+        throw new Jbig2Error("invalid Huffman FS selector");
     }
 
     switch (textRegion.huffmanDS) {
@@ -6687,7 +6802,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       default:
-        throw new Jbig2Error('invalid Huffman DS selector');
+        throw new Jbig2Error("invalid Huffman DS selector");
     }
 
     switch (textRegion.huffmanDT) {
@@ -6703,11 +6818,11 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       default:
-        throw new Jbig2Error('invalid Huffman DT selector');
+        throw new Jbig2Error("invalid Huffman DT selector");
     }
 
     if (textRegion.refinement) {
-      throw new Jbig2Error('refinement with Huffman is not supported');
+      throw new Jbig2Error("refinement with Huffman is not supported");
     }
 
     return {
@@ -6735,7 +6850,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       default:
-        throw new Jbig2Error('invalid Huffman DH selector');
+        throw new Jbig2Error("invalid Huffman DH selector");
     }
 
     switch (dictionary.huffmanDWSelector) {
@@ -6750,7 +6865,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
         break;
 
       default:
-        throw new Jbig2Error('invalid Huffman DW selector');
+        throw new Jbig2Error("invalid Huffman DW selector");
     }
 
     var tableBitmapSize, tableAggregateInstances;
@@ -6871,7 +6986,7 @@ var Jbig2Image = function Jbig2ImageClosure() {
 exports.Jbig2Image = Jbig2Image;
 
 /***/ }),
-/* 159 */
+/* 163 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
@@ -6904,7 +7019,7 @@ var QeTable = [{
   nlps: 9,
   switchFlag: 0
 }, {
-  qe: 0x0AC1,
+  qe: 0x0ac1,
   nmps: 4,
   nlps: 12,
   switchFlag: 0
@@ -6949,7 +7064,7 @@ var QeTable = [{
   nlps: 18,
   switchFlag: 0
 }, {
-  qe: 0x1C01,
+  qe: 0x1c01,
   nmps: 13,
   nlps: 20,
   switchFlag: 0
@@ -7009,7 +7124,7 @@ var QeTable = [{
   nlps: 21,
   switchFlag: 0
 }, {
-  qe: 0x1C01,
+  qe: 0x1c01,
   nmps: 25,
   nlps: 22,
   switchFlag: 0
@@ -7039,17 +7154,17 @@ var QeTable = [{
   nlps: 27,
   switchFlag: 0
 }, {
-  qe: 0x0AC1,
+  qe: 0x0ac1,
   nmps: 31,
   nlps: 28,
   switchFlag: 0
 }, {
-  qe: 0x09C1,
+  qe: 0x09c1,
   nmps: 32,
   nlps: 29,
   switchFlag: 0
 }, {
-  qe: 0x08A1,
+  qe: 0x08a1,
   nmps: 33,
   nlps: 30,
   switchFlag: 0
@@ -7064,7 +7179,7 @@ var QeTable = [{
   nlps: 32,
   switchFlag: 0
 }, {
-  qe: 0x02A1,
+  qe: 0x02a1,
   nmps: 36,
   nlps: 33,
   switchFlag: 0
@@ -7137,8 +7252,8 @@ function () {
     this.chigh = data[start];
     this.clow = 0;
     this.byteIn();
-    this.chigh = this.chigh << 7 & 0xFFFF | this.clow >> 9 & 0x7F;
-    this.clow = this.clow << 7 & 0xFFFF;
+    this.chigh = this.chigh << 7 & 0xffff | this.clow >> 9 & 0x7f;
+    this.clow = this.clow << 7 & 0xffff;
     this.ct -= 7;
     this.a = 0x8000;
   }
@@ -7149,9 +7264,9 @@ function () {
       var data = this.data;
       var bp = this.bp;
 
-      if (data[bp] === 0xFF) {
-        if (data[bp + 1] > 0x8F) {
-          this.clow += 0xFF00;
+      if (data[bp] === 0xff) {
+        if (data[bp + 1] > 0x8f) {
+          this.clow += 0xff00;
           this.ct = 8;
         } else {
           bp++;
@@ -7161,14 +7276,14 @@ function () {
         }
       } else {
         bp++;
-        this.clow += bp < this.dataEnd ? data[bp] << 8 : 0xFF00;
+        this.clow += bp < this.dataEnd ? data[bp] << 8 : 0xff00;
         this.ct = 8;
         this.bp = bp;
       }
 
-      if (this.clow > 0xFFFF) {
+      if (this.clow > 0xffff) {
         this.chigh += this.clow >> 16;
-        this.clow &= 0xFFFF;
+        this.clow &= 0xffff;
       }
     }
   }, {
@@ -7224,8 +7339,8 @@ function () {
         }
 
         a <<= 1;
-        this.chigh = this.chigh << 1 & 0xFFFF | this.clow >> 15 & 1;
-        this.clow = this.clow << 1 & 0xFFFF;
+        this.chigh = this.chigh << 1 & 0xffff | this.clow >> 15 & 1;
+        this.clow = this.clow << 1 & 0xffff;
         this.ct--;
       } while ((a & 0x8000) === 0);
 
@@ -7241,7 +7356,7 @@ function () {
 exports.ArithmeticDecoder = ArithmeticDecoder;
 
 /***/ }),
-/* 160 */
+/* 164 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
@@ -7276,25 +7391,25 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
   function CCITTFaxDecoder(source) {
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-    if (!source || typeof source.next !== 'function') {
+    if (!source || typeof source.next !== "function") {
       throw new Error('CCITTFaxDecoder - invalid "source" parameter.');
     }
 
     this.source = source;
     this.eof = false;
-    this.encoding = options['K'] || 0;
-    this.eoline = options['EndOfLine'] || false;
-    this.byteAlign = options['EncodedByteAlign'] || false;
-    this.columns = options['Columns'] || 1728;
-    this.rows = options['Rows'] || 0;
-    var eoblock = options['EndOfBlock'];
+    this.encoding = options["K"] || 0;
+    this.eoline = options["EndOfLine"] || false;
+    this.byteAlign = options["EncodedByteAlign"] || false;
+    this.columns = options["Columns"] || 1728;
+    this.rows = options["Rows"] || 0;
+    var eoblock = options["EndOfBlock"];
 
     if (eoblock === null || eoblock === undefined) {
       eoblock = true;
     }
 
     this.eoblock = eoblock;
-    this.black = options['BlackIs1'] || false;
+    this.black = options["BlackIs1"] || false;
     this.codingLine = new Uint32Array(this.columns + 1);
     this.refLine = new Uint32Array(this.columns + 2);
     this.codingLine[0] = this.columns;
@@ -7527,7 +7642,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
                 break;
 
               default:
-                (0, _util.info)('bad 2d code');
+                (0, _util.info)("bad 2d code");
 
                 this._addPixels(columns, 0);
 
@@ -7615,7 +7730,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
                 code1 = this._lookBits(12);
 
                 if (code1 !== 1) {
-                  (0, _util.info)('bad rtc code: ' + code1);
+                  (0, _util.info)("bad rtc code: " + code1);
                 }
 
                 this._eatBits(12);
@@ -7667,7 +7782,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
       var c;
 
       if (this.outputBits >= 8) {
-        c = this.codingPos & 1 ? 0 : 0xFF;
+        c = this.codingPos & 1 ? 0 : 0xff;
         this.outputBits -= 8;
 
         if (this.outputBits === 0 && codingLine[this.codingPos] < columns) {
@@ -7683,7 +7798,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
             c <<= bits;
 
             if (!(this.codingPos & 1)) {
-              c |= 0xFF >> 8 - bits;
+              c |= 0xff >> 8 - bits;
             }
 
             this.outputBits -= bits;
@@ -7692,7 +7807,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
             c <<= this.outputBits;
 
             if (!(this.codingPos & 1)) {
-              c |= 0xFF >> 8 - this.outputBits;
+              c |= 0xff >> 8 - this.outputBits;
             }
 
             bits -= this.outputBits;
@@ -7710,7 +7825,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
       }
 
       if (this.black) {
-        c ^= 0xFF;
+        c ^= 0xff;
       }
 
       return c;
@@ -7721,7 +7836,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
 
       if (a1 > codingLine[codingPos]) {
         if (a1 > this.columns) {
-          (0, _util.info)('row is wrong length');
+          (0, _util.info)("row is wrong length");
           this.err = true;
           a1 = this.columns;
         }
@@ -7741,7 +7856,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
 
       if (a1 > codingLine[codingPos]) {
         if (a1 > this.columns) {
-          (0, _util.info)('row is wrong length');
+          (0, _util.info)("row is wrong length");
           this.err = true;
           a1 = this.columns;
         }
@@ -7753,7 +7868,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
         codingLine[codingPos] = a1;
       } else if (a1 < codingLine[codingPos]) {
         if (a1 < 0) {
-          (0, _util.info)('invalid code');
+          (0, _util.info)("invalid code");
           this.err = true;
           a1 = 0;
         }
@@ -7815,7 +7930,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
         }
       }
 
-      (0, _util.info)('Bad two dim code');
+      (0, _util.info)("Bad two dim code");
       return ccittEOF;
     },
     _getWhiteCode: function _getWhiteCode() {
@@ -7854,7 +7969,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
         }
       }
 
-      (0, _util.info)('bad white code');
+      (0, _util.info)("bad white code");
 
       this._eatBits(1);
 
@@ -7903,7 +8018,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
         }
       }
 
-      (0, _util.info)('bad black code');
+      (0, _util.info)("bad black code");
 
       this._eatBits(1);
 
@@ -7918,14 +8033,14 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
             return ccittEOF;
           }
 
-          return this.inputBuf << n - this.inputBits & 0xFFFF >> 16 - n;
+          return this.inputBuf << n - this.inputBits & 0xffff >> 16 - n;
         }
 
         this.inputBuf = this.inputBuf << 8 | c;
         this.inputBits += 8;
       }
 
-      return this.inputBuf >> this.inputBits - n & 0xFFFF >> 16 - n;
+      return this.inputBuf >> this.inputBits - n & 0xffff >> 16 - n;
     },
     _eatBits: function _eatBits(n) {
       if ((this.inputBits -= n) < 0) {
@@ -7939,7 +8054,7 @@ var CCITTFaxDecoder = function CCITTFaxDecoder() {
 exports.CCITTFaxDecoder = CCITTFaxDecoder;
 
 /***/ }),
-/* 161 */
+/* 165 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
@@ -8109,19 +8224,19 @@ var JpegImage = function JpegImageClosure() {
 
       bitsData = data[offset++];
 
-      if (bitsData === 0xFF) {
+      if (bitsData === 0xff) {
         var nextByte = data[offset++];
 
         if (nextByte) {
-          if (nextByte === 0xDC && parseDNLMarker) {
+          if (nextByte === 0xdc && parseDNLMarker) {
             offset += 2;
             var scanLines = data[offset++] << 8 | data[offset++];
 
             if (scanLines > 0 && scanLines !== frame.scanLines) {
-              throw new DNLMarkerError('Found DNL marker (0xFFDC) while parsing scan data', scanLines);
+              throw new DNLMarkerError("Found DNL marker (0xFFDC) while parsing scan data", scanLines);
             }
-          } else if (nextByte === 0xD9) {
-            throw new EOIMarkerError('Found EOI marker (0xFFD9) while parsing scan data');
+          } else if (nextByte === 0xd9) {
+            throw new EOIMarkerError("Found EOI marker (0xFFD9) while parsing scan data");
           }
 
           throw new JpegError("unexpected marker ".concat((bitsData << 8 | nextByte).toString(16)));
@@ -8138,12 +8253,12 @@ var JpegImage = function JpegImageClosure() {
       while (true) {
         node = node[readBit()];
 
-        if (typeof node === 'number') {
+        if (typeof node === "number") {
           return node;
         }
 
-        if (_typeof(node) !== 'object') {
-          throw new JpegError('invalid huffman sequence');
+        if (_typeof(node) !== "object") {
+          throw new JpegError("invalid huffman sequence");
         }
       }
     }
@@ -8273,7 +8388,7 @@ var JpegImage = function JpegImageClosure() {
               }
             } else {
               if (s !== 1) {
-                throw new JpegError('invalid ACn encoding');
+                throw new JpegError("invalid ACn encoding");
               }
 
               successiveACNextValue = receiveAndExtend(s);
@@ -8408,17 +8523,17 @@ var JpegImage = function JpegImageClosure() {
       if (!fileMarker) {
         break;
       } else if (fileMarker.invalid) {
-        (0, _util.warn)('decodeScan - unexpected MCU data, current marker is: ' + fileMarker.invalid);
+        (0, _util.warn)("decodeScan - unexpected MCU data, current marker is: " + fileMarker.invalid);
         offset = fileMarker.offset;
       }
 
       var marker = fileMarker && fileMarker.marker;
 
-      if (!marker || marker <= 0xFF00) {
-        throw new JpegError('decodeScan - a valid marker was not found.');
+      if (!marker || marker <= 0xff00) {
+        throw new JpegError("decodeScan - a valid marker was not found.");
       }
 
-      if (marker >= 0xFFD0 && marker <= 0xFFD7) {
+      if (marker >= 0xffd0 && marker <= 0xffd7) {
         offset += 2;
       } else {
         break;
@@ -8428,7 +8543,7 @@ var JpegImage = function JpegImageClosure() {
     fileMarker = findNextFileMarker(data, offset);
 
     if (fileMarker && fileMarker.invalid) {
-      (0, _util.warn)('decodeScan - unexpected Scan data, current marker is: ' + fileMarker.invalid);
+      (0, _util.warn)("decodeScan - unexpected Scan data, current marker is: " + fileMarker.invalid);
       offset = fileMarker.offset;
     }
 
@@ -8443,7 +8558,7 @@ var JpegImage = function JpegImageClosure() {
     var t;
 
     if (!qt) {
-      throw new JpegError('missing required Quantization Table.');
+      throw new JpegError("missing required Quantization Table.");
     }
 
     for (var row = 0; row < 64; row += 8) {
@@ -8623,7 +8738,7 @@ var JpegImage = function JpegImageClosure() {
 
     var currentMarker = peekUint16(currentPos);
 
-    if (currentMarker >= 0xFFC0 && currentMarker <= 0xFFFE) {
+    if (currentMarker >= 0xffc0 && currentMarker <= 0xfffe) {
       return {
         invalid: null,
         marker: currentMarker,
@@ -8633,7 +8748,7 @@ var JpegImage = function JpegImageClosure() {
 
     var newMarker = peekUint16(newPos);
 
-    while (!(newMarker >= 0xFFC0 && newMarker <= 0xFFFE)) {
+    while (!(newMarker >= 0xffc0 && newMarker <= 0xfffe)) {
       if (++newPos >= maxPos) {
         return null;
       }
@@ -8666,7 +8781,7 @@ var JpegImage = function JpegImageClosure() {
         var fileMarker = findNextFileMarker(data, endOffset, offset);
 
         if (fileMarker && fileMarker.invalid) {
-          (0, _util.warn)('readDataBlock - incorrect length, current marker is: ' + fileMarker.invalid);
+          (0, _util.warn)("readDataBlock - incorrect length, current marker is: " + fileMarker.invalid);
           endOffset = fileMarker.offset;
         }
 
@@ -8705,37 +8820,37 @@ var JpegImage = function JpegImageClosure() {
           huffmanTablesDC = [];
       var fileMarker = readUint16();
 
-      if (fileMarker !== 0xFFD8) {
-        throw new JpegError('SOI not found');
+      if (fileMarker !== 0xffd8) {
+        throw new JpegError("SOI not found");
       }
 
       fileMarker = readUint16();
 
-      markerLoop: while (fileMarker !== 0xFFD9) {
+      markerLoop: while (fileMarker !== 0xffd9) {
         var i, j, l;
 
         switch (fileMarker) {
-          case 0xFFE0:
-          case 0xFFE1:
-          case 0xFFE2:
-          case 0xFFE3:
-          case 0xFFE4:
-          case 0xFFE5:
-          case 0xFFE6:
-          case 0xFFE7:
-          case 0xFFE8:
-          case 0xFFE9:
-          case 0xFFEA:
-          case 0xFFEB:
-          case 0xFFEC:
-          case 0xFFED:
-          case 0xFFEE:
-          case 0xFFEF:
-          case 0xFFFE:
+          case 0xffe0:
+          case 0xffe1:
+          case 0xffe2:
+          case 0xffe3:
+          case 0xffe4:
+          case 0xffe5:
+          case 0xffe6:
+          case 0xffe7:
+          case 0xffe8:
+          case 0xffe9:
+          case 0xffea:
+          case 0xffeb:
+          case 0xffec:
+          case 0xffed:
+          case 0xffee:
+          case 0xffef:
+          case 0xfffe:
             var appData = readDataBlock();
 
-            if (fileMarker === 0xFFE0) {
-              if (appData[0] === 0x4A && appData[1] === 0x46 && appData[2] === 0x49 && appData[3] === 0x46 && appData[4] === 0) {
+            if (fileMarker === 0xffe0) {
+              if (appData[0] === 0x4a && appData[1] === 0x46 && appData[2] === 0x49 && appData[3] === 0x46 && appData[4] === 0) {
                 jfif = {
                   version: {
                     major: appData[5],
@@ -8751,8 +8866,8 @@ var JpegImage = function JpegImageClosure() {
               }
             }
 
-            if (fileMarker === 0xFFEE) {
-              if (appData[0] === 0x41 && appData[1] === 0x64 && appData[2] === 0x6F && appData[3] === 0x62 && appData[4] === 0x65) {
+            if (fileMarker === 0xffee) {
+              if (appData[0] === 0x41 && appData[1] === 0x64 && appData[2] === 0x6f && appData[3] === 0x62 && appData[4] === 0x65) {
                 adobe = {
                   version: appData[5] << 8 | appData[6],
                   flags0: appData[7] << 8 | appData[8],
@@ -8764,7 +8879,7 @@ var JpegImage = function JpegImageClosure() {
 
             break;
 
-          case 0xFFDB:
+          case 0xffdb:
             var quantizationTablesLength = readUint16();
             var quantizationTablesEnd = quantizationTablesLength + offset - 2;
             var z;
@@ -8784,7 +8899,7 @@ var JpegImage = function JpegImageClosure() {
                   tableData[z] = readUint16();
                 }
               } else {
-                throw new JpegError('DQT - invalid table spec');
+                throw new JpegError("DQT - invalid table spec");
               }
 
               quantizationTables[quantizationTableSpec & 15] = tableData;
@@ -8792,17 +8907,17 @@ var JpegImage = function JpegImageClosure() {
 
             break;
 
-          case 0xFFC0:
-          case 0xFFC1:
-          case 0xFFC2:
+          case 0xffc0:
+          case 0xffc1:
+          case 0xffc2:
             if (frame) {
-              throw new JpegError('Only single frame JPEGs supported');
+              throw new JpegError("Only single frame JPEGs supported");
             }
 
             readUint16();
             frame = {};
-            frame.extended = fileMarker === 0xFFC1;
-            frame.progressive = fileMarker === 0xFFC2;
+            frame.extended = fileMarker === 0xffc1;
+            frame.progressive = fileMarker === 0xffc2;
             frame.precision = data[offset++];
             var sofScanLines = readUint16();
             frame.scanLines = dnlScanLines || sofScanLines;
@@ -8843,7 +8958,7 @@ var JpegImage = function JpegImageClosure() {
             prepareComponents(frame);
             break;
 
-          case 0xFFC4:
+          case 0xffc4:
             var huffmanLength = readUint16();
 
             for (i = 2; i < huffmanLength;) {
@@ -8867,12 +8982,12 @@ var JpegImage = function JpegImageClosure() {
 
             break;
 
-          case 0xFFDD:
+          case 0xffdd:
             readUint16();
             resetInterval = readUint16();
             break;
 
-          case 0xFFDA:
+          case 0xffda:
             var parseDNLMarker = ++numSOSMarkers === 1 && !dnlScanLines;
             readUint16();
             var selectorsCount = data[offset++];
@@ -8911,19 +9026,19 @@ var JpegImage = function JpegImageClosure() {
 
             break;
 
-          case 0xFFDC:
+          case 0xffdc:
             offset += 4;
             break;
 
-          case 0xFFFF:
-            if (data[offset] !== 0xFF) {
+          case 0xffff:
+            if (data[offset] !== 0xff) {
               offset--;
             }
 
             break;
 
           default:
-            if (data[offset - 3] === 0xFF && data[offset - 2] >= 0xC0 && data[offset - 2] <= 0xFE) {
+            if (data[offset - 3] === 0xff && data[offset - 2] >= 0xc0 && data[offset - 2] <= 0xfe) {
               offset -= 3;
               break;
             }
@@ -8931,17 +9046,17 @@ var JpegImage = function JpegImageClosure() {
             var nextFileMarker = findNextFileMarker(data, offset - 2);
 
             if (nextFileMarker && nextFileMarker.invalid) {
-              (0, _util.warn)('JpegImage.parse - unexpected data, current marker is: ' + nextFileMarker.invalid);
+              (0, _util.warn)("JpegImage.parse - unexpected data, current marker is: " + nextFileMarker.invalid);
               offset = nextFileMarker.offset;
               break;
             }
 
             if (offset > data.length - 2) {
-              (0, _util.warn)('JpegImage.parse - reached the end of the image data ' + 'without finding an EOI marker (0xFFD9).');
+              (0, _util.warn)("JpegImage.parse - reached the end of the image data " + "without finding an EOI marker (0xFFD9).");
               break markerLoop;
             }
 
-            throw new JpegError('JpegImage.parse - unknown marker: ' + fileMarker.toString(16));
+            throw new JpegError("JpegImage.parse - unknown marker: " + fileMarker.toString(16));
         }
 
         fileMarker = readUint16();
@@ -9119,7 +9234,7 @@ var JpegImage = function JpegImageClosure() {
           isSourcePDF = _ref3$isSourcePDF === void 0 ? false : _ref3$isSourcePDF;
 
       if (this.numComponents > 4) {
-        throw new JpegError('Unsupported color mode');
+        throw new JpegError("Unsupported color mode");
       }
 
       var data = this._getLinearizedBlockData(width, height, isSourcePDF);
@@ -9160,7 +9275,7 @@ var JpegImage = function JpegImageClosure() {
 exports.JpegImage = JpegImage;
 
 /***/ }),
-/* 162 */
+/* 166 */
 /***/ (function(module, exports, __w_pdfjs_require__) {
 
 "use strict";
@@ -9173,7 +9288,7 @@ exports.JpxImage = void 0;
 
 var _util = __w_pdfjs_require__(1);
 
-var _arithmetic_decoder = __w_pdfjs_require__(159);
+var _arithmetic_decoder = __w_pdfjs_require__(163);
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -9205,10 +9320,10 @@ function (_BaseException) {
 
 var JpxImage = function JpxImageClosure() {
   var SubbandsGainLog2 = {
-    'LL': 0,
-    'LH': 1,
-    'HL': 1,
-    'HH': 2
+    LL: 0,
+    LH: 1,
+    HL: 1,
+    HH: 2
   };
 
   function JpxImage() {
@@ -9219,7 +9334,7 @@ var JpxImage = function JpxImageClosure() {
     parse: function JpxImage_parse(data) {
       var head = (0, _util.readUint16)(data, 0);
 
-      if (head === 0xFF4F) {
+      if (head === 0xff4f) {
         this.parseCodestream(data, 0, data.length);
         return;
       }
@@ -9244,18 +9359,18 @@ var JpxImage = function JpxImageClosure() {
         }
 
         if (lbox < headerSize) {
-          throw new JpxError('Invalid box field size');
+          throw new JpxError("Invalid box field size");
         }
 
         var dataLength = lbox - headerSize;
         var jumpDataLength = true;
 
         switch (tbox) {
-          case 0x6A703268:
+          case 0x6a703268:
             jumpDataLength = false;
             break;
 
-          case 0x636F6C72:
+          case 0x636f6c72:
             var method = data[position];
 
             if (method === 1) {
@@ -9268,27 +9383,27 @@ var JpxImage = function JpxImageClosure() {
                   break;
 
                 default:
-                  (0, _util.warn)('Unknown colorspace ' + colorspace);
+                  (0, _util.warn)("Unknown colorspace " + colorspace);
                   break;
               }
             } else if (method === 2) {
-              (0, _util.info)('ICC profile not supported');
+              (0, _util.info)("ICC profile not supported");
             }
 
             break;
 
-          case 0x6A703263:
+          case 0x6a703263:
             this.parseCodestream(data, position, position + dataLength);
             break;
 
-          case 0x6A502020:
+          case 0x6a502020:
             if ((0, _util.readUint32)(data, position) !== 0x0d0a870a) {
-              (0, _util.warn)('Invalid JP2 signature');
+              (0, _util.warn)("Invalid JP2 signature");
             }
 
             break;
 
-          case 0x6A501A1A:
+          case 0x6a501a1a:
           case 0x66747970:
           case 0x72726571:
           case 0x72657320:
@@ -9296,8 +9411,8 @@ var JpxImage = function JpxImageClosure() {
             break;
 
           default:
-            var headerType = String.fromCharCode(tbox >> 24 & 0xFF, tbox >> 16 & 0xFF, tbox >> 8 & 0xFF, tbox & 0xFF);
-            (0, _util.warn)('Unsupported header type ' + tbox + ' (' + headerType + ')');
+            var headerType = String.fromCharCode(tbox >> 24 & 0xff, tbox >> 16 & 0xff, tbox >> 8 & 0xff, tbox & 0xff);
+            (0, _util.warn)("Unsupported header type " + tbox + " (" + headerType + ")");
             break;
         }
 
@@ -9314,7 +9429,7 @@ var JpxImage = function JpxImageClosure() {
         newByte = stream.getByte();
         var code = oldByte << 8 | newByte;
 
-        if (code === 0xFF51) {
+        if (code === 0xff51) {
           stream.skip(4);
           var Xsiz = stream.getInt32() >>> 0;
           var Ysiz = stream.getInt32() >>> 0;
@@ -9330,7 +9445,7 @@ var JpxImage = function JpxImageClosure() {
         }
       }
 
-      throw new JpxError('No size marker found in JPX stream');
+      throw new JpxError("No size marker found in JPX stream");
     },
     parseCodestream: function JpxImage_parseCodestream(data, start, end) {
       var context = {};
@@ -9351,14 +9466,14 @@ var JpxImage = function JpxImageClosure() {
               tile;
 
           switch (code) {
-            case 0xFF4F:
+            case 0xff4f:
               context.mainHeader = true;
               break;
 
-            case 0xFFD9:
+            case 0xffd9:
               break;
 
-            case 0xFF51:
+            case 0xff51:
               length = (0, _util.readUint16)(data, position);
               var siz = {};
               siz.Xsiz = (0, _util.readUint32)(data, position + 4);
@@ -9376,7 +9491,7 @@ var JpxImage = function JpxImageClosure() {
 
               for (var i = 0; i < componentsCount; i++) {
                 var component = {
-                  precision: (data[j] & 0x7F) + 1,
+                  precision: (data[j] & 0x7f) + 1,
                   isSigned: !!(data[j] & 0x80),
                   XRsiz: data[j + 1],
                   YRsiz: data[j + 2]
@@ -9393,13 +9508,13 @@ var JpxImage = function JpxImageClosure() {
               context.COC = [];
               break;
 
-            case 0xFF5C:
+            case 0xff5c:
               length = (0, _util.readUint16)(data, position);
               var qcd = {};
               j = position + 2;
               sqcd = data[j++];
 
-              switch (sqcd & 0x1F) {
+              switch (sqcd & 0x1f) {
                 case 0:
                   spqcdSize = 8;
                   scalarExpounded = true;
@@ -9416,7 +9531,7 @@ var JpxImage = function JpxImageClosure() {
                   break;
 
                 default:
-                  throw new Error('Invalid SQcd value ' + sqcd);
+                  throw new Error("Invalid SQcd value " + sqcd);
               }
 
               qcd.noQuantization = spqcdSize === 8;
@@ -9450,7 +9565,7 @@ var JpxImage = function JpxImageClosure() {
 
               break;
 
-            case 0xFF5D:
+            case 0xff5d:
               length = (0, _util.readUint16)(data, position);
               var qcc = {};
               j = position + 2;
@@ -9465,7 +9580,7 @@ var JpxImage = function JpxImageClosure() {
 
               sqcd = data[j++];
 
-              switch (sqcd & 0x1F) {
+              switch (sqcd & 0x1f) {
                 case 0:
                   spqcdSize = 8;
                   scalarExpounded = true;
@@ -9482,7 +9597,7 @@ var JpxImage = function JpxImageClosure() {
                   break;
 
                 default:
-                  throw new Error('Invalid SQcd value ' + sqcd);
+                  throw new Error("Invalid SQcd value " + sqcd);
               }
 
               qcc.noQuantization = spqcdSize === 8;
@@ -9515,7 +9630,7 @@ var JpxImage = function JpxImageClosure() {
 
               break;
 
-            case 0xFF52:
+            case 0xff52:
               length = (0, _util.readUint16)(data, position);
               var cod = {};
               j = position + 2;
@@ -9528,8 +9643,8 @@ var JpxImage = function JpxImageClosure() {
               j += 2;
               cod.multipleComponentTransform = data[j++];
               cod.decompositionLevelsCount = data[j++];
-              cod.xcb = (data[j++] & 0xF) + 2;
-              cod.ycb = (data[j++] & 0xF) + 2;
+              cod.xcb = (data[j++] & 0xf) + 2;
+              cod.ycb = (data[j++] & 0xf) + 2;
               var blockStyle = data[j++];
               cod.selectiveArithmeticCodingBypass = !!(blockStyle & 1);
               cod.resetContextProbabilities = !!(blockStyle & 2);
@@ -9545,7 +9660,7 @@ var JpxImage = function JpxImageClosure() {
                 while (j < length + position) {
                   var precinctsSize = data[j++];
                   precinctsSizes.push({
-                    PPx: precinctsSize & 0xF,
+                    PPx: precinctsSize & 0xf,
                     PPy: precinctsSize >> 4
                   });
                 }
@@ -9556,28 +9671,28 @@ var JpxImage = function JpxImageClosure() {
               var unsupported = [];
 
               if (cod.selectiveArithmeticCodingBypass) {
-                unsupported.push('selectiveArithmeticCodingBypass');
+                unsupported.push("selectiveArithmeticCodingBypass");
               }
 
               if (cod.resetContextProbabilities) {
-                unsupported.push('resetContextProbabilities');
+                unsupported.push("resetContextProbabilities");
               }
 
               if (cod.terminationOnEachCodingPass) {
-                unsupported.push('terminationOnEachCodingPass');
+                unsupported.push("terminationOnEachCodingPass");
               }
 
               if (cod.verticallyStripe) {
-                unsupported.push('verticallyStripe');
+                unsupported.push("verticallyStripe");
               }
 
               if (cod.predictableTermination) {
-                unsupported.push('predictableTermination');
+                unsupported.push("predictableTermination");
               }
 
               if (unsupported.length > 0) {
                 doNotRecover = true;
-                throw new Error('Unsupported COD options (' + unsupported.join(', ') + ')');
+                throw new Error("Unsupported COD options (" + unsupported.join(", ") + ")");
               }
 
               if (context.mainHeader) {
@@ -9589,7 +9704,7 @@ var JpxImage = function JpxImageClosure() {
 
               break;
 
-            case 0xFF90:
+            case 0xff90:
               length = (0, _util.readUint16)(data, position);
               tile = {};
               tile.index = (0, _util.readUint16)(data, position + 2);
@@ -9609,7 +9724,7 @@ var JpxImage = function JpxImageClosure() {
               context.currentTile = tile;
               break;
 
-            case 0xFF93:
+            case 0xff93:
               tile = context.currentTile;
 
               if (tile.partIndex === 0) {
@@ -9621,18 +9736,18 @@ var JpxImage = function JpxImageClosure() {
               parseTilePackets(context, data, position, length);
               break;
 
-            case 0xFF55:
-            case 0xFF57:
-            case 0xFF58:
-            case 0xFF64:
+            case 0xff55:
+            case 0xff57:
+            case 0xff58:
+            case 0xff64:
               length = (0, _util.readUint16)(data, position);
               break;
 
-            case 0xFF53:
-              throw new Error('Codestream code 0xFF53 (COC) is ' + 'not implemented');
+            case 0xff53:
+              throw new Error("Codestream code 0xFF53 (COC) is not implemented");
 
             default:
-              throw new Error('Unknown codestream code: ' + code.toString(16));
+              throw new Error("Unknown codestream code: " + code.toString(16));
           }
 
           position += length;
@@ -9641,7 +9756,7 @@ var JpxImage = function JpxImageClosure() {
         if (doNotRecover || this.failOnCorruptedImage) {
           throw new JpxError(e.message);
         } else {
-          (0, _util.warn)('JPX: Trying to recover from: ' + e.message);
+          (0, _util.warn)("JPX: Trying to recover from: " + e.message);
         }
       }
 
@@ -9886,7 +10001,7 @@ var JpxImage = function JpxImageClosure() {
         r = 0;
       }
 
-      throw new JpxError('Out of packets');
+      throw new JpxError("Out of packets");
     };
   }
 
@@ -9935,7 +10050,7 @@ var JpxImage = function JpxImageClosure() {
         l = 0;
       }
 
-      throw new JpxError('Out of packets');
+      throw new JpxError("Out of packets");
     };
   }
 
@@ -10006,7 +10121,7 @@ var JpxImage = function JpxImageClosure() {
         p = 0;
       }
 
-      throw new JpxError('Out of packets');
+      throw new JpxError("Out of packets");
     };
   }
 
@@ -10058,7 +10173,7 @@ var JpxImage = function JpxImageClosure() {
         px = 0;
       }
 
-      throw new JpxError('Out of packets');
+      throw new JpxError("Out of packets");
     };
   }
 
@@ -10110,7 +10225,7 @@ var JpxImage = function JpxImageClosure() {
         py = 0;
       }
 
-      throw new JpxError('Out of packets');
+      throw new JpxError("Out of packets");
     };
   }
 
@@ -10208,7 +10323,7 @@ var JpxImage = function JpxImageClosure() {
 
         if (r === 0) {
           subband = {};
-          subband.type = 'LL';
+          subband.type = "LL";
           subband.tbx0 = Math.ceil(component.tcx0 / scale);
           subband.tby0 = Math.ceil(component.tcy0 / scale);
           subband.tbx1 = Math.ceil(component.tcx1 / scale);
@@ -10221,7 +10336,7 @@ var JpxImage = function JpxImageClosure() {
           var bscale = 1 << decompositionLevelsCount - r + 1;
           var resolutionSubbands = [];
           subband = {};
-          subband.type = 'HL';
+          subband.type = "HL";
           subband.tbx0 = Math.ceil(component.tcx0 / bscale - 0.5);
           subband.tby0 = Math.ceil(component.tcy0 / bscale);
           subband.tbx1 = Math.ceil(component.tcx1 / bscale - 0.5);
@@ -10231,7 +10346,7 @@ var JpxImage = function JpxImageClosure() {
           subbands.push(subband);
           resolutionSubbands.push(subband);
           subband = {};
-          subband.type = 'LH';
+          subband.type = "LH";
           subband.tbx0 = Math.ceil(component.tcx0 / bscale);
           subband.tby0 = Math.ceil(component.tcy0 / bscale - 0.5);
           subband.tbx1 = Math.ceil(component.tcx1 / bscale);
@@ -10241,7 +10356,7 @@ var JpxImage = function JpxImageClosure() {
           subbands.push(subband);
           resolutionSubbands.push(subband);
           subband = {};
-          subband.type = 'HH';
+          subband.type = "HH";
           subband.tbx0 = Math.ceil(component.tcx0 / bscale - 0.5);
           subband.tby0 = Math.ceil(component.tcy0 / bscale - 0.5);
           subband.tbx1 = Math.ceil(component.tcx1 / bscale - 0.5);
@@ -10306,7 +10421,7 @@ var JpxImage = function JpxImageClosure() {
           bufferSize += 8;
         }
 
-        if (b === 0xFF) {
+        if (b === 0xff) {
           skipNextBit = true;
         }
       }
@@ -10316,10 +10431,10 @@ var JpxImage = function JpxImageClosure() {
     }
 
     function skipMarkerIfEqual(value) {
-      if (data[offset + position - 1] === 0xFF && data[offset + position] === value) {
+      if (data[offset + position - 1] === 0xff && data[offset + position] === value) {
         skipBytes(1);
         return true;
-      } else if (data[offset + position] === 0xFF && data[offset + position + 1] === value) {
+      } else if (data[offset + position] === 0xff && data[offset + position + 1] === value) {
         skipBytes(2);
         return true;
       }
@@ -10397,13 +10512,13 @@ var JpxImage = function JpxImageClosure() {
         var firstTimeInclusion = false;
         var valueReady;
 
-        if (codeblock['included'] !== undefined) {
+        if (codeblock["included"] !== undefined) {
           codeblockIncluded = !!readBits(1);
         } else {
           precinct = codeblock.precinct;
           var inclusionTree, zeroBitPlanesTree;
 
-          if (precinct['inclusionTree'] !== undefined) {
+          if (precinct["inclusionTree"] !== undefined) {
             inclusionTree = precinct.inclusionTree;
           } else {
             var width = precinct.cbxMax - precinct.cbxMin + 1;
@@ -10481,7 +10596,7 @@ var JpxImage = function JpxImageClosure() {
         var packetItem = queue.shift();
         codeblock = packetItem.codeblock;
 
-        if (codeblock['data'] === undefined) {
+        if (codeblock["data"] === undefined) {
           codeblock.data = [];
         }
 
@@ -10503,8 +10618,8 @@ var JpxImage = function JpxImageClosure() {
     var y0 = subband.tby0;
     var width = subband.tbx1 - subband.tbx0;
     var codeblocks = subband.codeblocks;
-    var right = subband.type.charAt(0) === 'H' ? 1 : 0;
-    var bottom = subband.type.charAt(1) === 'H' ? levelWidth : 0;
+    var right = subband.type.charAt(0) === "H" ? 1 : 0;
+    var bottom = subband.type.charAt(1) === "H" ? levelWidth : 0;
 
     for (var i = 0, ii = codeblocks.length; i < ii; ++i) {
       var codeblock = codeblocks[i];
@@ -10515,7 +10630,7 @@ var JpxImage = function JpxImageClosure() {
         continue;
       }
 
-      if (codeblock['data'] === undefined) {
+      if (codeblock["data"] === undefined) {
         continue;
       }
 
@@ -10576,7 +10691,7 @@ var JpxImage = function JpxImageClosure() {
       var magnitudeCorrection = reversible ? 0 : 0.5;
       var k, n, nb;
       position = 0;
-      var interleave = subband.type !== 'LL';
+      var interleave = subband.type !== "LL";
 
       for (j = 0; j < blockHeight; j++) {
         var row = offset / width | 0;
@@ -10874,7 +10989,7 @@ var JpxImage = function JpxImageClosure() {
           level.index = index;
           var value = level.items[index];
 
-          if (value === 0xFF) {
+          if (value === 0xff) {
             break;
           }
 
@@ -10911,7 +11026,7 @@ var JpxImage = function JpxImageClosure() {
         var currentLevel = this.currentLevel;
         var level = this.levels[currentLevel];
         var value = level.items[level.index];
-        level.items[level.index] = 0xFF;
+        level.items[level.index] = 0xff;
         currentLevel--;
 
         if (currentLevel < 0) {
@@ -10937,7 +11052,7 @@ var JpxImage = function JpxImageClosure() {
     function BitModel(width, height, subband, zeroBitPlanes, mb) {
       this.width = width;
       this.height = height;
-      this.contextLabelTable = subband === 'HH' ? HHContextLabel : subband === 'HL' ? HLContextLabel : LLAndLHContextsLabel;
+      this.contextLabelTable = subband === "HH" ? HHContextLabel : subband === "HL" ? HLContextLabel : LLAndLHContextsLabel;
       var coefficientCount = width * height;
       this.neighborsSignificance = new Uint8Array(coefficientCount);
       this.coefficentsSign = new Uint8Array(coefficientCount);
@@ -11242,8 +11357,8 @@ var JpxImage = function JpxImageClosure() {
         var contexts = this.contexts;
         var symbol = decoder.readBit(contexts, UNIFORM_CONTEXT) << 3 | decoder.readBit(contexts, UNIFORM_CONTEXT) << 2 | decoder.readBit(contexts, UNIFORM_CONTEXT) << 1 | decoder.readBit(contexts, UNIFORM_CONTEXT);
 
-        if (symbol !== 0xA) {
-          throw new JpxError('Invalid segmentation symbol');
+        if (symbol !== 0xa) {
+          throw new JpxError("Invalid segmentation symbol");
         }
       }
     };

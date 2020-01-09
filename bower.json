@@ -1,6 +1,6 @@
 {
-  "name": "pdfjs-dist",
-  "version": "2.3.200",
+  "name": "@magloft/pdfjs-dist",
+  "version": "2.4.266",
   "main": [
     "build/pdf.js",
     "build/pdf.worker.js"
