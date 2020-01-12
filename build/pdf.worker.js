@@ -123,8 +123,8 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 
 
-var pdfjsVersion = '2.4.266';
-var pdfjsBuild = 'c3ce3e0b';
+var pdfjsVersion = '2.4.267';
+var pdfjsBuild = 'bb9d58ee';
 
 var pdfjsCoreWorker = __w_pdfjs_require__(1);
 
@@ -235,7 +235,7 @@ var WorkerMessageHandler = {
     var WorkerTasks = [];
     var verbosity = (0, _util.getVerbosityLevel)();
     var apiVersion = docParams.apiVersion;
-    var workerVersion = '2.4.266';
+    var workerVersion = '2.4.267';
 
     if (apiVersion !== workerVersion) {
       throw new Error("The API version \"".concat(apiVersion, "\" does not match ") + "the Worker version \"".concat(workerVersion, "\"."));
@@ -32721,10 +32721,14 @@ var PartialEvaluator = function PartialEvaluatorClosure() {
       function runBidiTransform(textChunk) {
         var str = textChunk.str.join("");
         var bidiResult = (0, _bidi.bidi)(str, -1, textChunk.vertical);
+        var fontWeight = "normal";
+        var fontStyle = "normal";
 
-        var _stateManager$state$f = stateManager.state.font.getFontProps(),
-            fontWeight = _stateManager$state$f.fontWeight,
-            fontStyle = _stateManager$state$f.fontStyle;
+        if (stateManager.state.font) {
+          var props = stateManager.state.font.getFontProps();
+          fontWeight = props.fontWeight;
+          fontStyle = props.fontStyle;
+        }
 
         var fontSize = textChunk.height;
         return {

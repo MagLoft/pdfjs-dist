@@ -1,6 +1,6 @@
 {
   "name": "@magloft/pdfjs-dist",
-  "version": "2.4.266",
+  "version": "2.4.267",
   "main": "build/pdf.js",
   "description": "Generic build of Mozilla's PDF.js library.",
   "keywords": [
